@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/MailMerge/Form1.cs) (VB: [Form1.vb](./VB/MailMerge/Form1.vb))
+* [SampleData.cs](./CS/MailMerge/SampleData.cs) (VB: [SampleData.vb](./VB/MailMerge/SampleData.vb))
+<!-- default file list end -->
 # How to implement mail merge in a RichEditControl
 
 
