@@ -28,9 +28,10 @@ namespace MailMerge
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation1 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.galleryChangeStyleItem1 = new DevExpress.XtraRichEdit.UI.GalleryChangeStyleItem();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.richEditControl1 = new DevExpress.XtraRichEdit.RichEditControl();
@@ -107,32 +108,28 @@ namespace MailMerge
             this.changeParagraphBackColorItem1 = new DevExpress.XtraRichEdit.UI.ChangeParagraphBackColorItem();
             this.findItem1 = new DevExpress.XtraRichEdit.UI.FindItem();
             this.replaceItem1 = new DevExpress.XtraRichEdit.UI.ReplaceItem();
+            this.barButtonGroup8 = new DevExpress.XtraBars.BarButtonGroup();
+            this.barButtonGroup9 = new DevExpress.XtraBars.BarButtonGroup();
+            this.barButtonGroup10 = new DevExpress.XtraBars.BarButtonGroup();
+            this.barButtonGroup11 = new DevExpress.XtraBars.BarButtonGroup();
+            this.barButtonGroup12 = new DevExpress.XtraBars.BarButtonGroup();
+            this.barButtonGroup13 = new DevExpress.XtraBars.BarButtonGroup();
+            this.barButtonGroup14 = new DevExpress.XtraBars.BarButtonGroup();
+            this.encryptDocumentItem1 = new DevExpress.XtraRichEdit.UI.EncryptDocumentItem();
+            this.showDocumentPropertiesFormItem1 = new DevExpress.XtraRichEdit.UI.ShowDocumentPropertiesFormItem();
             this.mailingsRibbonPage1 = new DevExpress.XtraRichEdit.UI.MailingsRibbonPage();
             this.mailMergeRibbonPageGroup1 = new DevExpress.XtraRichEdit.UI.MailMergeRibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.richEditControl2 = new DevExpress.XtraRichEdit.RichEditControl();
-            this.richEditBarController1 = new DevExpress.XtraRichEdit.UI.RichEditBarController();
+            this.richEditBarController1 = new DevExpress.XtraRichEdit.UI.RichEditBarController(this.components);
             this.showFontFormItem1 = new DevExpress.XtraRichEdit.UI.ShowFontFormItem();
             this.showEditStyleFormItem1 = new DevExpress.XtraRichEdit.UI.ShowEditStyleFormItem();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.galleryChangeStyleItem1 = new DevExpress.XtraRichEdit.UI.GalleryChangeStyleItem();
-            this.commonRibbonPageGroup1 = new DevExpress.XtraRichEdit.UI.CommonRibbonPageGroup();
-            this.fileRibbonPage1 = new DevExpress.XtraRichEdit.UI.FileRibbonPage();
-            this.clipboardRibbonPageGroup1 = new DevExpress.XtraRichEdit.UI.ClipboardRibbonPageGroup();
-            this.homeRibbonPage1 = new DevExpress.XtraRichEdit.UI.HomeRibbonPage();
-            this.fontRibbonPageGroup1 = new DevExpress.XtraRichEdit.UI.FontRibbonPageGroup();
-            this.barButtonGroup8 = new DevExpress.XtraBars.BarButtonGroup();
-            this.barButtonGroup9 = new DevExpress.XtraBars.BarButtonGroup();
-            this.barButtonGroup10 = new DevExpress.XtraBars.BarButtonGroup();
-            this.paragraphRibbonPageGroup1 = new DevExpress.XtraRichEdit.UI.ParagraphRibbonPageGroup();
-            this.barButtonGroup11 = new DevExpress.XtraBars.BarButtonGroup();
-            this.barButtonGroup12 = new DevExpress.XtraBars.BarButtonGroup();
-            this.barButtonGroup13 = new DevExpress.XtraBars.BarButtonGroup();
-            this.barButtonGroup14 = new DevExpress.XtraBars.BarButtonGroup();
-            this.stylesRibbonPageGroup1 = new DevExpress.XtraRichEdit.UI.StylesRibbonPageGroup();
-            this.editingRibbonPageGroup1 = new DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup();
+            this.prevRecordItem = new DevExpress.XtraBars.BarButtonItem();
+            this.nextRecordItem = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
@@ -144,13 +141,26 @@ namespace MailMerge
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).BeginInit();
             this.SuspendLayout();
             // 
+            // galleryChangeStyleItem1
+            // 
+            // 
+            // 
+            // 
+            this.galleryChangeStyleItem1.Gallery.ColumnCount = 10;
+            this.galleryChangeStyleItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup1});
+            this.galleryChangeStyleItem1.Gallery.ImageSize = new System.Drawing.Size(76, 57);
+            this.galleryChangeStyleItem1.Id = 39;
+            this.galleryChangeStyleItem1.Name = "galleryChangeStyleItem1";
+            // 
             // xtraTabControl1
             // 
             this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraTabControl1.Location = new System.Drawing.Point(0, 142);
+            this.xtraTabControl1.Location = new System.Drawing.Point(0, 193);
+            this.xtraTabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(792, 397);
+            this.xtraTabControl1.Size = new System.Drawing.Size(924, 474);
             this.xtraTabControl1.TabIndex = 0;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -160,28 +170,30 @@ namespace MailMerge
             // xtraTabPage1
             // 
             this.xtraTabPage1.Controls.Add(this.richEditControl1);
+            this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(786, 369);
-            this.xtraTabPage1.Text = "xtraTabPage1";
+            this.xtraTabPage1.Size = new System.Drawing.Size(922, 444);
+            this.xtraTabPage1.Text = "Template";
             // 
             // richEditControl1
             // 
             this.richEditControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richEditControl1.Location = new System.Drawing.Point(0, 0);
+            this.richEditControl1.Margin = new System.Windows.Forms.Padding(4);
             this.richEditControl1.MenuManager = this.ribbonControl1;
             this.richEditControl1.Name = "richEditControl1";
-            this.richEditControl1.Options.Fields.UseCurrentCultureDateTimeFormat = false;
-            this.richEditControl1.Options.MailMerge.KeepLastParagraph = false;
-            this.richEditControl1.Size = new System.Drawing.Size(786, 369);
+            this.richEditControl1.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            this.richEditControl1.Size = new System.Drawing.Size(922, 444);
             this.richEditControl1.TabIndex = 0;
-            this.richEditControl1.Text = "richEditControl1";
             // 
             // ribbonControl1
             // 
             this.ribbonControl1.AutoSizeItems = true;
+            this.ribbonControl1.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(35, 37, 35, 37);
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
+            this.ribbonControl1.SearchEditItem,
             this.fileNewItem1,
             this.fileOpenItem1,
             this.fileSaveItem1,
@@ -258,90 +270,76 @@ namespace MailMerge
             this.barButtonGroup11,
             this.barButtonGroup12,
             this.barButtonGroup13,
-            this.barButtonGroup14});
+            this.barButtonGroup14,
+            this.encryptDocumentItem1,
+            this.showDocumentPropertiesFormItem1,
+            this.prevRecordItem,
+            this.nextRecordItem});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 47;
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.ribbonControl1.MaxItemId = 51;
             this.ribbonControl1.Name = "ribbonControl1";
+            this.ribbonControl1.OptionsMenuMinWidth = 385;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.fileRibbonPage1,
-            this.homeRibbonPage1,
             this.mailingsRibbonPage1});
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemFontEdit1,
             this.repositoryItemRichEditFontSizeEdit1,
             this.repositoryItemRichEditStyleEdit1});
-            this.ribbonControl1.Size = new System.Drawing.Size(792, 142);
+            this.ribbonControl1.Size = new System.Drawing.Size(924, 193);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // fileNewItem1
             // 
-            this.fileNewItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("fileNewItem1.Glyph")));
             this.fileNewItem1.Id = 0;
-            this.fileNewItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("fileNewItem1.LargeGlyph")));
             this.fileNewItem1.Name = "fileNewItem1";
             // 
             // fileOpenItem1
             // 
-            this.fileOpenItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("fileOpenItem1.Glyph")));
             this.fileOpenItem1.Id = 1;
-            this.fileOpenItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("fileOpenItem1.LargeGlyph")));
             this.fileOpenItem1.Name = "fileOpenItem1";
             // 
             // fileSaveItem1
             // 
-            this.fileSaveItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("fileSaveItem1.Glyph")));
             this.fileSaveItem1.Id = 2;
-            this.fileSaveItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("fileSaveItem1.LargeGlyph")));
             this.fileSaveItem1.Name = "fileSaveItem1";
             // 
             // fileSaveAsItem1
             // 
-            this.fileSaveAsItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("fileSaveAsItem1.Glyph")));
             this.fileSaveAsItem1.Id = 3;
-            this.fileSaveAsItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("fileSaveAsItem1.LargeGlyph")));
             this.fileSaveAsItem1.Name = "fileSaveAsItem1";
             // 
             // quickPrintItem1
             // 
-            this.quickPrintItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("quickPrintItem1.Glyph")));
             this.quickPrintItem1.Id = 4;
-            this.quickPrintItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("quickPrintItem1.LargeGlyph")));
             this.quickPrintItem1.Name = "quickPrintItem1";
             // 
             // printItem1
             // 
-            this.printItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("printItem1.Glyph")));
             this.printItem1.Id = 5;
-            this.printItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("printItem1.LargeGlyph")));
             this.printItem1.Name = "printItem1";
             // 
             // printPreviewItem1
             // 
-            this.printPreviewItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("printPreviewItem1.Glyph")));
             this.printPreviewItem1.Id = 6;
-            this.printPreviewItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("printPreviewItem1.LargeGlyph")));
             this.printPreviewItem1.Name = "printPreviewItem1";
             // 
             // undoItem1
             // 
-            this.undoItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("undoItem1.Glyph")));
             this.undoItem1.Id = 7;
-            this.undoItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("undoItem1.LargeGlyph")));
             this.undoItem1.Name = "undoItem1";
             // 
             // redoItem1
             // 
-            this.redoItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("redoItem1.Glyph")));
             this.redoItem1.Id = 8;
-            this.redoItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("redoItem1.LargeGlyph")));
             this.redoItem1.Name = "redoItem1";
             // 
             // changeFontNameItem1
             // 
             this.changeFontNameItem1.Edit = this.repositoryItemFontEdit1;
+            this.changeFontNameItem1.EditWidth = 150;
             this.changeFontNameItem1.Id = 9;
             this.changeFontNameItem1.Name = "changeFontNameItem1";
-            this.changeFontNameItem1.Width = 150;
             // 
             // repositoryItemFontEdit1
             // 
@@ -366,162 +364,119 @@ namespace MailMerge
             // 
             // changeFontColorItem1
             // 
-            this.changeFontColorItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("changeFontColorItem1.Glyph")));
             this.changeFontColorItem1.Id = 11;
-            this.changeFontColorItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("changeFontColorItem1.LargeGlyph")));
             this.changeFontColorItem1.Name = "changeFontColorItem1";
             // 
             // changeFontBackColorItem1
             // 
-            this.changeFontBackColorItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("changeFontBackColorItem1.Glyph")));
             this.changeFontBackColorItem1.Id = 12;
-            this.changeFontBackColorItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("changeFontBackColorItem1.LargeGlyph")));
             this.changeFontBackColorItem1.Name = "changeFontBackColorItem1";
             // 
             // toggleFontBoldItem1
             // 
-            this.toggleFontBoldItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("toggleFontBoldItem1.Glyph")));
             this.toggleFontBoldItem1.Id = 13;
-            this.toggleFontBoldItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("toggleFontBoldItem1.LargeGlyph")));
             this.toggleFontBoldItem1.Name = "toggleFontBoldItem1";
             // 
             // toggleFontItalicItem1
             // 
-            this.toggleFontItalicItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("toggleFontItalicItem1.Glyph")));
             this.toggleFontItalicItem1.Id = 14;
-            this.toggleFontItalicItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("toggleFontItalicItem1.LargeGlyph")));
             this.toggleFontItalicItem1.Name = "toggleFontItalicItem1";
             // 
             // fontSizeIncreaseItem1
             // 
-            this.fontSizeIncreaseItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("fontSizeIncreaseItem1.Glyph")));
             this.fontSizeIncreaseItem1.Id = 21;
-            this.fontSizeIncreaseItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("fontSizeIncreaseItem1.LargeGlyph")));
             this.fontSizeIncreaseItem1.Name = "fontSizeIncreaseItem1";
             // 
             // fontSizeDecreaseItem1
             // 
-            this.fontSizeDecreaseItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("fontSizeDecreaseItem1.Glyph")));
             this.fontSizeDecreaseItem1.Id = 22;
-            this.fontSizeDecreaseItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("fontSizeDecreaseItem1.LargeGlyph")));
             this.fontSizeDecreaseItem1.Name = "fontSizeDecreaseItem1";
             // 
             // clearFormattingItem1
             // 
-            this.clearFormattingItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("clearFormattingItem1.Glyph")));
             this.clearFormattingItem1.Id = 23;
-            this.clearFormattingItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("clearFormattingItem1.LargeGlyph")));
             this.clearFormattingItem1.Name = "clearFormattingItem1";
             // 
             // toggleParagraphAlignmentLeftItem1
             // 
-            this.toggleParagraphAlignmentLeftItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("toggleParagraphAlignmentLeftItem1.Glyph")));
             this.toggleParagraphAlignmentLeftItem1.Id = 25;
-            this.toggleParagraphAlignmentLeftItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("toggleParagraphAlignmentLeftItem1.LargeGlyph")));
             this.toggleParagraphAlignmentLeftItem1.Name = "toggleParagraphAlignmentLeftItem1";
             // 
             // toggleParagraphAlignmentCenterItem1
             // 
-            this.toggleParagraphAlignmentCenterItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("toggleParagraphAlignmentCenterItem1.Glyph")));
             this.toggleParagraphAlignmentCenterItem1.Id = 26;
-            this.toggleParagraphAlignmentCenterItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("toggleParagraphAlignmentCenterItem1.LargeGlyph")));
             this.toggleParagraphAlignmentCenterItem1.Name = "toggleParagraphAlignmentCenterItem1";
             // 
             // toggleParagraphAlignmentRightItem1
             // 
-            this.toggleParagraphAlignmentRightItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("toggleParagraphAlignmentRightItem1.Glyph")));
             this.toggleParagraphAlignmentRightItem1.Id = 27;
-            this.toggleParagraphAlignmentRightItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("toggleParagraphAlignmentRightItem1.LargeGlyph")));
             this.toggleParagraphAlignmentRightItem1.Name = "toggleParagraphAlignmentRightItem1";
             // 
             // toggleParagraphAlignmentJustifyItem1
             // 
-            this.toggleParagraphAlignmentJustifyItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("toggleParagraphAlignmentJustifyItem1.Glyph")));
             this.toggleParagraphAlignmentJustifyItem1.Id = 28;
-            this.toggleParagraphAlignmentJustifyItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("toggleParagraphAlignmentJustifyItem1.LargeGlyph")));
             this.toggleParagraphAlignmentJustifyItem1.Name = "toggleParagraphAlignmentJustifyItem1";
             // 
             // toggleNumberingListItem1
             // 
-            this.toggleNumberingListItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("toggleNumberingListItem1.Glyph")));
             this.toggleNumberingListItem1.Id = 29;
-            this.toggleNumberingListItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("toggleNumberingListItem1.LargeGlyph")));
             this.toggleNumberingListItem1.Name = "toggleNumberingListItem1";
             // 
             // toggleBulletedListItem1
             // 
-            this.toggleBulletedListItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("toggleBulletedListItem1.Glyph")));
             this.toggleBulletedListItem1.Id = 30;
-            this.toggleBulletedListItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("toggleBulletedListItem1.LargeGlyph")));
             this.toggleBulletedListItem1.Name = "toggleBulletedListItem1";
             // 
             // toggleMultiLevelListItem1
             // 
-            this.toggleMultiLevelListItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("toggleMultiLevelListItem1.Glyph")));
             this.toggleMultiLevelListItem1.Id = 31;
-            this.toggleMultiLevelListItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("toggleMultiLevelListItem1.LargeGlyph")));
             this.toggleMultiLevelListItem1.Name = "toggleMultiLevelListItem1";
             // 
             // decreaseIndentItem1
             // 
-            this.decreaseIndentItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("decreaseIndentItem1.Glyph")));
             this.decreaseIndentItem1.Id = 32;
-            this.decreaseIndentItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("decreaseIndentItem1.LargeGlyph")));
             this.decreaseIndentItem1.Name = "decreaseIndentItem1";
             // 
             // increaseIndentItem1
             // 
-            this.increaseIndentItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("increaseIndentItem1.Glyph")));
             this.increaseIndentItem1.Id = 33;
-            this.increaseIndentItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("increaseIndentItem1.LargeGlyph")));
             this.increaseIndentItem1.Name = "increaseIndentItem1";
             // 
             // toggleShowWhitespaceItem1
             // 
-            this.toggleShowWhitespaceItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("toggleShowWhitespaceItem1.Glyph")));
             this.toggleShowWhitespaceItem1.Id = 34;
-            this.toggleShowWhitespaceItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("toggleShowWhitespaceItem1.LargeGlyph")));
             this.toggleShowWhitespaceItem1.Name = "toggleShowWhitespaceItem1";
             // 
             // showParagraphFormItem1
             // 
-            this.showParagraphFormItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("showParagraphFormItem1.Glyph")));
             this.showParagraphFormItem1.Id = 35;
-            this.showParagraphFormItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("showParagraphFormItem1.LargeGlyph")));
             this.showParagraphFormItem1.Name = "showParagraphFormItem1";
             // 
             // insertMergeFieldItem1
             // 
-            this.insertMergeFieldItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("insertMergeFieldItem1.Glyph")));
             this.insertMergeFieldItem1.Id = 36;
-            this.insertMergeFieldItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("insertMergeFieldItem1.LargeGlyph")));
             this.insertMergeFieldItem1.Name = "insertMergeFieldItem1";
             // 
             // showAllFieldCodesItem1
             // 
-            this.showAllFieldCodesItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("showAllFieldCodesItem1.Glyph")));
             this.showAllFieldCodesItem1.Id = 37;
-            this.showAllFieldCodesItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("showAllFieldCodesItem1.LargeGlyph")));
             this.showAllFieldCodesItem1.Name = "showAllFieldCodesItem1";
             // 
             // showAllFieldResultsItem1
             // 
-            this.showAllFieldResultsItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("showAllFieldResultsItem1.Glyph")));
             this.showAllFieldResultsItem1.Id = 38;
-            this.showAllFieldResultsItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("showAllFieldResultsItem1.LargeGlyph")));
             this.showAllFieldResultsItem1.Name = "showAllFieldResultsItem1";
             // 
             // toggleViewMergedDataItem1
             // 
-            this.toggleViewMergedDataItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("toggleViewMergedDataItem1.Glyph")));
             this.toggleViewMergedDataItem1.Id = 39;
-            this.toggleViewMergedDataItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("toggleViewMergedDataItem1.LargeGlyph")));
             this.toggleViewMergedDataItem1.Name = "toggleViewMergedDataItem1";
             // 
             // mergeToNewDocumentItem
             // 
             this.mergeToNewDocumentItem.Caption = "Merge to New Document";
             this.mergeToNewDocumentItem.Id = 40;
+            this.mergeToNewDocumentItem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("mergeToNewDocumentItem.ImageOptions.SvgImage")));
             this.mergeToNewDocumentItem.Name = "mergeToNewDocumentItem";
             this.mergeToNewDocumentItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mergeToNewDocumentItem_ItemClick);
             // 
@@ -529,6 +484,7 @@ namespace MailMerge
             // 
             this.mergeToFileItem.Caption = "Merge to File";
             this.mergeToFileItem.Id = 41;
+            this.mergeToFileItem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("mergeToFileItem.ImageOptions.SvgImage")));
             this.mergeToFileItem.Name = "mergeToFileItem";
             this.mergeToFileItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mergeToFileItem_ItemClick);
             // 
@@ -569,10 +525,10 @@ namespace MailMerge
             // barButtonGroup1
             // 
             this.barButtonGroup1.Id = 6;
-            this.barButtonGroup1.ItemLinks.Add(this.changeFontNameItem1);
+            this.barButtonGroup1.ItemLinks.Add(this.changeFontNameItem1, "FF");
             this.barButtonGroup1.ItemLinks.Add(this.changeFontSizeItem1);
-            this.barButtonGroup1.ItemLinks.Add(this.fontSizeIncreaseItem1);
-            this.barButtonGroup1.ItemLinks.Add(this.fontSizeDecreaseItem1);
+            this.barButtonGroup1.ItemLinks.Add(this.fontSizeIncreaseItem1, "FG");
+            this.barButtonGroup1.ItemLinks.Add(this.fontSizeDecreaseItem1, "FK");
             this.barButtonGroup1.Name = "barButtonGroup1";
             this.barButtonGroup1.Tag = "{97BBE334-159B-44d9-A168-0411957565E8}";
             // 
@@ -623,8 +579,8 @@ namespace MailMerge
             // barButtonGroup3
             // 
             this.barButtonGroup3.Id = 8;
-            this.barButtonGroup3.ItemLinks.Add(this.changeFontColorItem1);
-            this.barButtonGroup3.ItemLinks.Add(this.changeFontBackColorItem1);
+            this.barButtonGroup3.ItemLinks.Add(this.changeFontColorItem1, "FC");
+            this.barButtonGroup3.ItemLinks.Add(this.changeFontBackColorItem1, "I");
             this.barButtonGroup3.Name = "barButtonGroup3";
             this.barButtonGroup3.Tag = "{DF8C5334-EDE3-47c9-A42C-FE9A9247E180}";
             // 
@@ -655,17 +611,17 @@ namespace MailMerge
             // barButtonGroup4
             // 
             this.barButtonGroup4.Id = 9;
-            this.barButtonGroup4.ItemLinks.Add(this.toggleBulletedListItem1);
-            this.barButtonGroup4.ItemLinks.Add(this.toggleNumberingListItem1);
-            this.barButtonGroup4.ItemLinks.Add(this.toggleMultiLevelListItem1);
+            this.barButtonGroup4.ItemLinks.Add(this.toggleBulletedListItem1, "U");
+            this.barButtonGroup4.ItemLinks.Add(this.toggleNumberingListItem1, "N");
+            this.barButtonGroup4.ItemLinks.Add(this.toggleMultiLevelListItem1, "M");
             this.barButtonGroup4.Name = "barButtonGroup4";
             this.barButtonGroup4.Tag = "{0B3A7A43-3079-4ce0-83A8-3789F5F6DC9F}";
             // 
             // barButtonGroup5
             // 
             this.barButtonGroup5.Id = 10;
-            this.barButtonGroup5.ItemLinks.Add(this.decreaseIndentItem1);
-            this.barButtonGroup5.ItemLinks.Add(this.increaseIndentItem1);
+            this.barButtonGroup5.ItemLinks.Add(this.decreaseIndentItem1, "AO");
+            this.barButtonGroup5.ItemLinks.Add(this.increaseIndentItem1, "AI");
             this.barButtonGroup5.ItemLinks.Add(this.toggleShowWhitespaceItem1);
             this.barButtonGroup5.Name = "barButtonGroup5";
             this.barButtonGroup5.Tag = "{4747D5AB-2BEB-4ea6-9A1D-8E4FB36F1B40}";
@@ -673,18 +629,18 @@ namespace MailMerge
             // barButtonGroup6
             // 
             this.barButtonGroup6.Id = 11;
-            this.barButtonGroup6.ItemLinks.Add(this.toggleParagraphAlignmentLeftItem1);
-            this.barButtonGroup6.ItemLinks.Add(this.toggleParagraphAlignmentCenterItem1);
-            this.barButtonGroup6.ItemLinks.Add(this.toggleParagraphAlignmentRightItem1);
-            this.barButtonGroup6.ItemLinks.Add(this.toggleParagraphAlignmentJustifyItem1);
+            this.barButtonGroup6.ItemLinks.Add(this.toggleParagraphAlignmentLeftItem1, "AL");
+            this.barButtonGroup6.ItemLinks.Add(this.toggleParagraphAlignmentCenterItem1, "AC");
+            this.barButtonGroup6.ItemLinks.Add(this.toggleParagraphAlignmentRightItem1, "AR");
+            this.barButtonGroup6.ItemLinks.Add(this.toggleParagraphAlignmentJustifyItem1, "AJ");
             this.barButtonGroup6.Name = "barButtonGroup6";
             this.barButtonGroup6.Tag = "{8E89E775-996E-49a0-AADA-DE338E34732E}";
             // 
             // barButtonGroup7
             // 
             this.barButtonGroup7.Id = 12;
-            this.barButtonGroup7.ItemLinks.Add(this.changeParagraphLineSpacingItem1);
-            this.barButtonGroup7.ItemLinks.Add(this.changeParagraphBackColorItem1);
+            this.barButtonGroup7.ItemLinks.Add(this.changeParagraphLineSpacingItem1, "K");
+            this.barButtonGroup7.ItemLinks.Add(this.changeParagraphBackColorItem1, "H");
             this.barButtonGroup7.Name = "barButtonGroup7";
             this.barButtonGroup7.Tag = "{9A8DEAD8-3890-4857-A395-EC625FD02217}";
             // 
@@ -696,7 +652,7 @@ namespace MailMerge
             new DevExpress.XtraBars.LinkPersistInfo(this.setSesquialteralParagraphSpacingItem1),
             new DevExpress.XtraBars.LinkPersistInfo(this.setDoubleParagraphSpacingItem1),
             new DevExpress.XtraBars.LinkPersistInfo(this.showLineSpacingFormItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.addSpacingBeforeParagraphItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.KeyTip, this.addSpacingBeforeParagraphItem1, "", false, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.Standard, "B", ""),
             new DevExpress.XtraBars.LinkPersistInfo(this.removeSpacingBeforeParagraphItem1),
             new DevExpress.XtraBars.LinkPersistInfo(this.addSpacingAfterParagraphItem1),
             new DevExpress.XtraBars.LinkPersistInfo(this.removeSpacingAfterParagraphItem1)});
@@ -757,47 +713,128 @@ namespace MailMerge
             this.replaceItem1.Id = 38;
             this.replaceItem1.Name = "replaceItem1";
             // 
+            // barButtonGroup8
+            // 
+            this.barButtonGroup8.Id = 40;
+            this.barButtonGroup8.ItemLinks.Add(this.changeFontNameItem1, "FF");
+            this.barButtonGroup8.ItemLinks.Add(this.changeFontSizeItem1);
+            this.barButtonGroup8.ItemLinks.Add(this.fontSizeIncreaseItem1, "FG");
+            this.barButtonGroup8.ItemLinks.Add(this.fontSizeDecreaseItem1, "FK");
+            this.barButtonGroup8.Name = "barButtonGroup8";
+            this.barButtonGroup8.Tag = "{97BBE334-159B-44d9-A168-0411957565E8}";
+            // 
+            // barButtonGroup9
+            // 
+            this.barButtonGroup9.Id = 41;
+            this.barButtonGroup9.ItemLinks.Add(this.toggleFontBoldItem1);
+            this.barButtonGroup9.ItemLinks.Add(this.toggleFontItalicItem1);
+            this.barButtonGroup9.ItemLinks.Add(this.toggleFontUnderlineItem1);
+            this.barButtonGroup9.ItemLinks.Add(this.toggleFontDoubleUnderlineItem1);
+            this.barButtonGroup9.ItemLinks.Add(this.toggleFontStrikeoutItem1);
+            this.barButtonGroup9.ItemLinks.Add(this.toggleFontDoubleStrikeoutItem1);
+            this.barButtonGroup9.ItemLinks.Add(this.toggleFontSuperscriptItem1);
+            this.barButtonGroup9.ItemLinks.Add(this.toggleFontSubscriptItem1);
+            this.barButtonGroup9.Name = "barButtonGroup9";
+            this.barButtonGroup9.Tag = "{433DA7F0-03E2-4650-9DB5-66DD92D16E39}";
+            // 
+            // barButtonGroup10
+            // 
+            this.barButtonGroup10.Id = 42;
+            this.barButtonGroup10.ItemLinks.Add(this.changeFontColorItem1, "FC");
+            this.barButtonGroup10.ItemLinks.Add(this.changeFontBackColorItem1, "I");
+            this.barButtonGroup10.Name = "barButtonGroup10";
+            this.barButtonGroup10.Tag = "{DF8C5334-EDE3-47c9-A42C-FE9A9247E180}";
+            // 
+            // barButtonGroup11
+            // 
+            this.barButtonGroup11.Id = 43;
+            this.barButtonGroup11.ItemLinks.Add(this.toggleBulletedListItem1, "U");
+            this.barButtonGroup11.ItemLinks.Add(this.toggleNumberingListItem1, "N");
+            this.barButtonGroup11.ItemLinks.Add(this.toggleMultiLevelListItem1, "M");
+            this.barButtonGroup11.Name = "barButtonGroup11";
+            this.barButtonGroup11.Tag = "{0B3A7A43-3079-4ce0-83A8-3789F5F6DC9F}";
+            // 
+            // barButtonGroup12
+            // 
+            this.barButtonGroup12.Id = 44;
+            this.barButtonGroup12.ItemLinks.Add(this.decreaseIndentItem1, "AO");
+            this.barButtonGroup12.ItemLinks.Add(this.increaseIndentItem1, "AI");
+            this.barButtonGroup12.ItemLinks.Add(this.toggleShowWhitespaceItem1);
+            this.barButtonGroup12.Name = "barButtonGroup12";
+            this.barButtonGroup12.Tag = "{4747D5AB-2BEB-4ea6-9A1D-8E4FB36F1B40}";
+            // 
+            // barButtonGroup13
+            // 
+            this.barButtonGroup13.Id = 45;
+            this.barButtonGroup13.ItemLinks.Add(this.toggleParagraphAlignmentLeftItem1, "AL");
+            this.barButtonGroup13.ItemLinks.Add(this.toggleParagraphAlignmentCenterItem1, "AC");
+            this.barButtonGroup13.ItemLinks.Add(this.toggleParagraphAlignmentRightItem1, "AR");
+            this.barButtonGroup13.ItemLinks.Add(this.toggleParagraphAlignmentJustifyItem1, "AJ");
+            this.barButtonGroup13.Name = "barButtonGroup13";
+            this.barButtonGroup13.Tag = "{8E89E775-996E-49a0-AADA-DE338E34732E}";
+            // 
+            // barButtonGroup14
+            // 
+            this.barButtonGroup14.Id = 46;
+            this.barButtonGroup14.ItemLinks.Add(this.changeParagraphLineSpacingItem1, "K");
+            this.barButtonGroup14.ItemLinks.Add(this.changeParagraphBackColorItem1, "H");
+            this.barButtonGroup14.Name = "barButtonGroup14";
+            this.barButtonGroup14.Tag = "{9A8DEAD8-3890-4857-A395-EC625FD02217}";
+            // 
+            // encryptDocumentItem1
+            // 
+            this.encryptDocumentItem1.Id = 47;
+            this.encryptDocumentItem1.Name = "encryptDocumentItem1";
+            // 
+            // showDocumentPropertiesFormItem1
+            // 
+            this.showDocumentPropertiesFormItem1.Id = 48;
+            this.showDocumentPropertiesFormItem1.Name = "showDocumentPropertiesFormItem1";
+            // 
             // mailingsRibbonPage1
             // 
             this.mailingsRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.mailMergeRibbonPageGroup1});
+            this.mailMergeRibbonPageGroup1,
+            this.ribbonPageGroup3});
             this.mailingsRibbonPage1.Name = "mailingsRibbonPage1";
             // 
             // mailMergeRibbonPageGroup1
             // 
+            this.mailMergeRibbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.mailMergeRibbonPageGroup1.ItemLinks.Add(this.insertMergeFieldItem1);
             this.mailMergeRibbonPageGroup1.ItemLinks.Add(this.showAllFieldCodesItem1);
             this.mailMergeRibbonPageGroup1.ItemLinks.Add(this.showAllFieldResultsItem1);
-            this.mailMergeRibbonPageGroup1.ItemLinks.Add(this.toggleViewMergedDataItem1);
+            this.mailMergeRibbonPageGroup1.ItemLinks.Add(this.toggleViewMergedDataItem1, "P");
             this.mailMergeRibbonPageGroup1.ItemLinks.Add(this.mergeToNewDocumentItem);
             this.mailMergeRibbonPageGroup1.ItemLinks.Add(this.mergeToFileItem);
             this.mailMergeRibbonPageGroup1.Name = "mailMergeRibbonPageGroup1";
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 539);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 667);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(792, 27);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(924, 30);
             // 
             // xtraTabPage2
             // 
             this.xtraTabPage2.Controls.Add(this.richEditControl2);
+            this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(786, 369);
-            this.xtraTabPage2.Text = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(922, 444);
+            this.xtraTabPage2.Text = "Merged Document";
             // 
             // richEditControl2
             // 
             this.richEditControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richEditControl2.Location = new System.Drawing.Point(0, 0);
+            this.richEditControl2.Margin = new System.Windows.Forms.Padding(4);
             this.richEditControl2.MenuManager = this.ribbonControl1;
             this.richEditControl2.Name = "richEditControl2";
-            this.richEditControl2.Options.Fields.UseCurrentCultureDateTimeFormat = false;
-            this.richEditControl2.Options.MailMerge.KeepLastParagraph = false;
-            this.richEditControl2.Size = new System.Drawing.Size(786, 369);
+            this.richEditControl2.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            this.richEditControl2.Size = new System.Drawing.Size(922, 444);
             this.richEditControl2.TabIndex = 1;
-            this.richEditControl2.Text = "richEditControl2";
             // 
             // richEditBarController1
             // 
@@ -864,207 +901,81 @@ namespace MailMerge
             this.richEditBarController1.BarItems.Add(this.findItem1);
             this.richEditBarController1.BarItems.Add(this.replaceItem1);
             this.richEditBarController1.BarItems.Add(this.galleryChangeStyleItem1);
+            this.richEditBarController1.BarItems.Add(this.encryptDocumentItem1);
+            this.richEditBarController1.BarItems.Add(this.showDocumentPropertiesFormItem1);
             this.richEditBarController1.Control = this.richEditControl1;
             // 
             // showFontFormItem1
             // 
-            this.showFontFormItem1.Id = -1;
             this.showFontFormItem1.Name = "showFontFormItem1";
             // 
             // showEditStyleFormItem1
             // 
-            this.showEditStyleFormItem1.Id = -1;
             this.showEditStyleFormItem1.Name = "showEditStyleFormItem1";
             // 
             // ribbonPageGroup2
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.changeFontNameItem1);
+            this.ribbonPageGroup2.ItemLinks.Add(this.changeFontNameItem1, "FF");
             this.ribbonPageGroup2.ItemLinks.Add(this.changeFontSizeItem1);
-            this.ribbonPageGroup2.ItemLinks.Add(this.changeFontColorItem1);
-            this.ribbonPageGroup2.ItemLinks.Add(this.changeFontBackColorItem1);
+            this.ribbonPageGroup2.ItemLinks.Add(this.changeFontColorItem1, "FC");
+            this.ribbonPageGroup2.ItemLinks.Add(this.changeFontBackColorItem1, "I");
             this.ribbonPageGroup2.ItemLinks.Add(this.toggleFontBoldItem1);
             this.ribbonPageGroup2.ItemLinks.Add(this.toggleFontItalicItem1);
-            this.ribbonPageGroup2.ItemLinks.Add(this.fontSizeIncreaseItem1);
-            this.ribbonPageGroup2.ItemLinks.Add(this.fontSizeDecreaseItem1);
-            this.ribbonPageGroup2.ItemLinks.Add(this.clearFormattingItem1);
+            this.ribbonPageGroup2.ItemLinks.Add(this.fontSizeIncreaseItem1, "FG");
+            this.ribbonPageGroup2.ItemLinks.Add(this.fontSizeDecreaseItem1, "FK");
+            this.ribbonPageGroup2.ItemLinks.Add(this.clearFormattingItem1, "E");
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Font";
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.fileNewItem1);
-            this.ribbonPageGroup1.ItemLinks.Add(this.fileOpenItem1);
-            this.ribbonPageGroup1.ItemLinks.Add(this.fileSaveItem1);
-            this.ribbonPageGroup1.ItemLinks.Add(this.fileSaveAsItem1);
+            this.ribbonPageGroup1.ItemLinks.Add(this.fileNewItem1, "N");
+            this.ribbonPageGroup1.ItemLinks.Add(this.fileOpenItem1, "O");
+            this.ribbonPageGroup1.ItemLinks.Add(this.fileSaveItem1, "S");
+            this.ribbonPageGroup1.ItemLinks.Add(this.fileSaveAsItem1, "A");
             this.ribbonPageGroup1.ItemLinks.Add(this.quickPrintItem1);
-            this.ribbonPageGroup1.ItemLinks.Add(this.printItem1);
+            this.ribbonPageGroup1.ItemLinks.Add(this.printItem1, "P");
             this.ribbonPageGroup1.ItemLinks.Add(this.printPreviewItem1);
             this.ribbonPageGroup1.ItemLinks.Add(this.undoItem1);
             this.ribbonPageGroup1.ItemLinks.Add(this.redoItem1);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "Common";
             // 
-            // galleryChangeStyleItem1
+            // prevRecordItem
             // 
+            this.prevRecordItem.Caption = "Previous Record";
+            this.prevRecordItem.Id = 49;
+            this.prevRecordItem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("prevRecordItem.ImageOptions.SvgImage")));
+            this.prevRecordItem.Name = "prevRecordItem";
+            this.prevRecordItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.prevRecordItem_ItemClick);
             // 
+            // nextRecordItem
             // 
+            this.nextRecordItem.Caption = "Next Record";
+            this.nextRecordItem.Id = 50;
+            this.nextRecordItem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("nextRecordItem.ImageOptions.SvgImage")));
+            this.nextRecordItem.Name = "nextRecordItem";
+            this.nextRecordItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.nextRecordItem_ItemClick);
             // 
-            this.galleryChangeStyleItem1.Gallery.ColumnCount = 10;
-            this.galleryChangeStyleItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup1});
-            this.galleryChangeStyleItem1.Gallery.ImageSize = new System.Drawing.Size(65, 46);
-            this.galleryChangeStyleItem1.Id = 39;
-            this.galleryChangeStyleItem1.Name = "galleryChangeStyleItem1";
+            // ribbonPageGroup3
             // 
-            // commonRibbonPageGroup1
-            // 
-            this.commonRibbonPageGroup1.ItemLinks.Add(this.fileNewItem1);
-            this.commonRibbonPageGroup1.ItemLinks.Add(this.fileOpenItem1);
-            this.commonRibbonPageGroup1.ItemLinks.Add(this.fileSaveItem1);
-            this.commonRibbonPageGroup1.ItemLinks.Add(this.fileSaveAsItem1);
-            this.commonRibbonPageGroup1.ItemLinks.Add(this.quickPrintItem1);
-            this.commonRibbonPageGroup1.ItemLinks.Add(this.printItem1);
-            this.commonRibbonPageGroup1.ItemLinks.Add(this.printPreviewItem1);
-            this.commonRibbonPageGroup1.ItemLinks.Add(this.undoItem1);
-            this.commonRibbonPageGroup1.ItemLinks.Add(this.redoItem1);
-            this.commonRibbonPageGroup1.Name = "commonRibbonPageGroup1";
-            // 
-            // fileRibbonPage1
-            // 
-            this.fileRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.commonRibbonPageGroup1});
-            this.fileRibbonPage1.Name = "fileRibbonPage1";
-            // 
-            // clipboardRibbonPageGroup1
-            // 
-            this.clipboardRibbonPageGroup1.ItemLinks.Add(this.pasteItem1);
-            this.clipboardRibbonPageGroup1.ItemLinks.Add(this.cutItem1);
-            this.clipboardRibbonPageGroup1.ItemLinks.Add(this.copyItem1);
-            this.clipboardRibbonPageGroup1.ItemLinks.Add(this.pasteSpecialItem1);
-            this.clipboardRibbonPageGroup1.Name = "clipboardRibbonPageGroup1";
-            // 
-            // homeRibbonPage1
-            // 
-            this.homeRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.clipboardRibbonPageGroup1,
-            this.fontRibbonPageGroup1,
-            this.paragraphRibbonPageGroup1,
-            this.stylesRibbonPageGroup1,
-            this.editingRibbonPageGroup1});
-            this.homeRibbonPage1.Name = "homeRibbonPage1";
-            reduceOperation1.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.UntilAvailable;
-            reduceOperation1.Group = this.stylesRibbonPageGroup1;
-            reduceOperation1.ItemLinkIndex = 0;
-            reduceOperation1.ItemLinksCount = 0;
-            reduceOperation1.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.Gallery;
-            this.homeRibbonPage1.ReduceOperations.Add(reduceOperation1);
-            // 
-            // fontRibbonPageGroup1
-            // 
-            this.fontRibbonPageGroup1.ItemLinks.Add(this.barButtonGroup8);
-            this.fontRibbonPageGroup1.ItemLinks.Add(this.barButtonGroup9);
-            this.fontRibbonPageGroup1.ItemLinks.Add(this.barButtonGroup10);
-            this.fontRibbonPageGroup1.ItemLinks.Add(this.changeTextCaseItem1);
-            this.fontRibbonPageGroup1.ItemLinks.Add(this.clearFormattingItem1);
-            this.fontRibbonPageGroup1.Name = "fontRibbonPageGroup1";
-            // 
-            // barButtonGroup8
-            // 
-            this.barButtonGroup8.Id = 40;
-            this.barButtonGroup8.ItemLinks.Add(this.changeFontNameItem1);
-            this.barButtonGroup8.ItemLinks.Add(this.changeFontSizeItem1);
-            this.barButtonGroup8.ItemLinks.Add(this.fontSizeIncreaseItem1);
-            this.barButtonGroup8.ItemLinks.Add(this.fontSizeDecreaseItem1);
-            this.barButtonGroup8.Name = "barButtonGroup8";
-            this.barButtonGroup8.Tag = "{97BBE334-159B-44d9-A168-0411957565E8}";
-            // 
-            // barButtonGroup9
-            // 
-            this.barButtonGroup9.Id = 41;
-            this.barButtonGroup9.ItemLinks.Add(this.toggleFontBoldItem1);
-            this.barButtonGroup9.ItemLinks.Add(this.toggleFontItalicItem1);
-            this.barButtonGroup9.ItemLinks.Add(this.toggleFontUnderlineItem1);
-            this.barButtonGroup9.ItemLinks.Add(this.toggleFontDoubleUnderlineItem1);
-            this.barButtonGroup9.ItemLinks.Add(this.toggleFontStrikeoutItem1);
-            this.barButtonGroup9.ItemLinks.Add(this.toggleFontDoubleStrikeoutItem1);
-            this.barButtonGroup9.ItemLinks.Add(this.toggleFontSuperscriptItem1);
-            this.barButtonGroup9.ItemLinks.Add(this.toggleFontSubscriptItem1);
-            this.barButtonGroup9.Name = "barButtonGroup9";
-            this.barButtonGroup9.Tag = "{433DA7F0-03E2-4650-9DB5-66DD92D16E39}";
-            // 
-            // barButtonGroup10
-            // 
-            this.barButtonGroup10.Id = 42;
-            this.barButtonGroup10.ItemLinks.Add(this.changeFontColorItem1);
-            this.barButtonGroup10.ItemLinks.Add(this.changeFontBackColorItem1);
-            this.barButtonGroup10.Name = "barButtonGroup10";
-            this.barButtonGroup10.Tag = "{DF8C5334-EDE3-47c9-A42C-FE9A9247E180}";
-            // 
-            // paragraphRibbonPageGroup1
-            // 
-            this.paragraphRibbonPageGroup1.ItemLinks.Add(this.barButtonGroup11);
-            this.paragraphRibbonPageGroup1.ItemLinks.Add(this.barButtonGroup12);
-            this.paragraphRibbonPageGroup1.ItemLinks.Add(this.barButtonGroup13);
-            this.paragraphRibbonPageGroup1.ItemLinks.Add(this.barButtonGroup14);
-            this.paragraphRibbonPageGroup1.Name = "paragraphRibbonPageGroup1";
-            // 
-            // barButtonGroup11
-            // 
-            this.barButtonGroup11.Id = 43;
-            this.barButtonGroup11.ItemLinks.Add(this.toggleBulletedListItem1);
-            this.barButtonGroup11.ItemLinks.Add(this.toggleNumberingListItem1);
-            this.barButtonGroup11.ItemLinks.Add(this.toggleMultiLevelListItem1);
-            this.barButtonGroup11.Name = "barButtonGroup11";
-            this.barButtonGroup11.Tag = "{0B3A7A43-3079-4ce0-83A8-3789F5F6DC9F}";
-            // 
-            // barButtonGroup12
-            // 
-            this.barButtonGroup12.Id = 44;
-            this.barButtonGroup12.ItemLinks.Add(this.decreaseIndentItem1);
-            this.barButtonGroup12.ItemLinks.Add(this.increaseIndentItem1);
-            this.barButtonGroup12.ItemLinks.Add(this.toggleShowWhitespaceItem1);
-            this.barButtonGroup12.Name = "barButtonGroup12";
-            this.barButtonGroup12.Tag = "{4747D5AB-2BEB-4ea6-9A1D-8E4FB36F1B40}";
-            // 
-            // barButtonGroup13
-            // 
-            this.barButtonGroup13.Id = 45;
-            this.barButtonGroup13.ItemLinks.Add(this.toggleParagraphAlignmentLeftItem1);
-            this.barButtonGroup13.ItemLinks.Add(this.toggleParagraphAlignmentCenterItem1);
-            this.barButtonGroup13.ItemLinks.Add(this.toggleParagraphAlignmentRightItem1);
-            this.barButtonGroup13.ItemLinks.Add(this.toggleParagraphAlignmentJustifyItem1);
-            this.barButtonGroup13.Name = "barButtonGroup13";
-            this.barButtonGroup13.Tag = "{8E89E775-996E-49a0-AADA-DE338E34732E}";
-            // 
-            // barButtonGroup14
-            // 
-            this.barButtonGroup14.Id = 46;
-            this.barButtonGroup14.ItemLinks.Add(this.changeParagraphLineSpacingItem1);
-            this.barButtonGroup14.ItemLinks.Add(this.changeParagraphBackColorItem1);
-            this.barButtonGroup14.Name = "barButtonGroup14";
-            this.barButtonGroup14.Tag = "{9A8DEAD8-3890-4857-A395-EC625FD02217}";
-            // 
-            // stylesRibbonPageGroup1
-            // 
-            this.stylesRibbonPageGroup1.Glyph = ((System.Drawing.Image)(resources.GetObject("stylesRibbonPageGroup1.Glyph")));
-            this.stylesRibbonPageGroup1.ItemLinks.Add(this.galleryChangeStyleItem1);
-            this.stylesRibbonPageGroup1.Name = "stylesRibbonPageGroup1";
-            // 
-            // editingRibbonPageGroup1
-            // 
-            this.editingRibbonPageGroup1.ItemLinks.Add(this.findItem1);
-            this.editingRibbonPageGroup1.ItemLinks.Add(this.replaceItem1);
-            this.editingRibbonPageGroup1.Name = "editingRibbonPageGroup1";
+            this.ribbonPageGroup3.ItemLinks.Add(this.prevRecordItem);
+            this.ribbonPageGroup3.ItemLinks.Add(this.nextRecordItem);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "Navigation";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 566);
+            this.ClientSize = new System.Drawing.Size(924, 697);
             this.Controls.Add(this.xtraTabControl1);
-            this.Controls.Add(this.ribbonControl1);
             this.Controls.Add(this.ribbonStatusBar1);
+            this.Controls.Add(this.ribbonControl1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
+            this.Ribbon = this.ribbonControl1;
+            this.StatusBar = this.ribbonStatusBar1;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
@@ -1076,6 +987,7 @@ namespace MailMerge
             this.xtraTabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1175,14 +1087,11 @@ namespace MailMerge
         private DevExpress.XtraBars.BarButtonGroup barButtonGroup12;
         private DevExpress.XtraBars.BarButtonGroup barButtonGroup13;
         private DevExpress.XtraBars.BarButtonGroup barButtonGroup14;
-        private DevExpress.XtraRichEdit.UI.FileRibbonPage fileRibbonPage1;
-        private DevExpress.XtraRichEdit.UI.CommonRibbonPageGroup commonRibbonPageGroup1;
-        private DevExpress.XtraRichEdit.UI.HomeRibbonPage homeRibbonPage1;
-        private DevExpress.XtraRichEdit.UI.ClipboardRibbonPageGroup clipboardRibbonPageGroup1;
-        private DevExpress.XtraRichEdit.UI.FontRibbonPageGroup fontRibbonPageGroup1;
-        private DevExpress.XtraRichEdit.UI.ParagraphRibbonPageGroup paragraphRibbonPageGroup1;
-        private DevExpress.XtraRichEdit.UI.StylesRibbonPageGroup stylesRibbonPageGroup1;
-        private DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup editingRibbonPageGroup1;
+        private DevExpress.XtraRichEdit.UI.EncryptDocumentItem encryptDocumentItem1;
+        private DevExpress.XtraRichEdit.UI.ShowDocumentPropertiesFormItem showDocumentPropertiesFormItem1;
+        private DevExpress.XtraBars.BarButtonItem prevRecordItem;
+        private DevExpress.XtraBars.BarButtonItem nextRecordItem;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
     }
 }
 
