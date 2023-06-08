@@ -7,7 +7,7 @@
 
 This example illustrates how to implement mail merge in the [RichEditControl](https://docs.devexpress.com/WindowsForms/DevExpress.XtraRichEdit.RichEditControl).
 
-In this example, the **ArrayList** generated at runtime is used as a data source that supplies mail merge data to the document. The tab control on the form contains a Ribbon UI and two **RichEditControl** instances (one of them is used to construct a document template, and the other displays the mail merge result).
+In this example, the **ArrayList** generated at runtime is used as a data source that supplies mail merge data to the document. The tab control on the form contains a Ribbon UI and two **RichEditControl** instances (one of them is used to construct a document template, and the other displays the mail merge result). The [RichEditMailMergeOptions.ActiveRecord](https://docs.devexpress.com/OfficeFileAPI/DevExpress.XtraRichEdit.RichEditMailMergeOptions.ActiveRecord) property is used to navigate between records.
 
 ![application](./media/image.png)
 
