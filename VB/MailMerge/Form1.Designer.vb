@@ -1,5 +1,7 @@
-﻿Namespace MailMerge
-    Partial Public Class Form1
+Namespace MailMerge
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,22 +12,22 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+'#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
-            Dim resources As New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-            Dim galleryItemGroup1 As New DevExpress.XtraBars.Ribbon.GalleryItemGroup()
-            Dim reduceOperation1 As New DevExpress.XtraBars.Ribbon.ReduceOperation()
+            Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MailMerge.Form1))
+            Dim galleryItemGroup1 As DevExpress.XtraBars.Ribbon.GalleryItemGroup = New DevExpress.XtraBars.Ribbon.GalleryItemGroup()
+            Dim reduceOperation1 As DevExpress.XtraBars.Ribbon.ReduceOperation = New DevExpress.XtraBars.Ribbon.ReduceOperation()
             Me.xtraTabControl1 = New DevExpress.XtraTab.XtraTabControl()
             Me.xtraTabPage1 = New DevExpress.XtraTab.XtraTabPage()
             Me.richEditControl1 = New DevExpress.XtraRichEdit.RichEditControl()
@@ -128,15 +130,15 @@
             Me.barButtonGroup14 = New DevExpress.XtraBars.BarButtonGroup()
             Me.stylesRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.StylesRibbonPageGroup()
             Me.editingRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup()
-            DirectCast(Me.xtraTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.xtraTabControl1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.xtraTabControl1.SuspendLayout()
             Me.xtraTabPage1.SuspendLayout()
-            DirectCast(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.repositoryItemFontEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.repositoryItemRichEditFontSizeEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.repositoryItemRichEditStyleEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.ribbonControl1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.repositoryItemFontEdit1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.repositoryItemRichEditFontSizeEdit1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.repositoryItemRichEditStyleEdit1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.xtraTabPage2.SuspendLayout()
-            DirectCast(Me.richEditBarController1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.richEditBarController1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' xtraTabControl1
@@ -147,7 +149,8 @@
             Me.xtraTabControl1.SelectedTabPage = Me.xtraTabPage1
             Me.xtraTabControl1.Size = New System.Drawing.Size(792, 397)
             Me.xtraTabControl1.TabIndex = 0
-            Me.xtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() { Me.xtraTabPage1, Me.xtraTabPage2})
+            Me.xtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.xtraTabPage1, Me.xtraTabPage2})
+            AddHandler Me.xtraTabControl1.Selected, New DevExpress.XtraTab.TabPageEventHandler(AddressOf Me.xtraTabControl1_Selected)
             ' 
             ' xtraTabPage1
             ' 
@@ -172,76 +175,76 @@
             ' 
             Me.ribbonControl1.AutoSizeItems = True
             Me.ribbonControl1.ExpandCollapseItem.Id = 0
-            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() { Me.ribbonControl1.ExpandCollapseItem, Me.fileNewItem1, Me.fileOpenItem1, Me.fileSaveItem1, Me.fileSaveAsItem1, Me.quickPrintItem1, Me.printItem1, Me.printPreviewItem1, Me.undoItem1, Me.redoItem1, Me.changeFontNameItem1, Me.changeFontSizeItem1, Me.changeFontColorItem1, Me.changeFontBackColorItem1, Me.toggleFontBoldItem1, Me.toggleFontItalicItem1, Me.fontSizeIncreaseItem1, Me.fontSizeDecreaseItem1, Me.clearFormattingItem1, Me.toggleParagraphAlignmentLeftItem1, Me.toggleParagraphAlignmentCenterItem1, Me.toggleParagraphAlignmentRightItem1, Me.toggleParagraphAlignmentJustifyItem1, Me.toggleNumberingListItem1, Me.toggleBulletedListItem1, Me.toggleMultiLevelListItem1, Me.decreaseIndentItem1, Me.increaseIndentItem1, Me.toggleShowWhitespaceItem1, Me.showParagraphFormItem1, Me.insertMergeFieldItem1, Me.showAllFieldCodesItem1, Me.showAllFieldResultsItem1, Me.toggleViewMergedDataItem1, Me.mergeToNewDocumentItem, Me.mergeToFileItem, Me.changeStyleItem1, Me.pasteItem1, Me.cutItem1, Me.copyItem1, Me.pasteSpecialItem1, Me.barButtonGroup1, Me.barButtonGroup2, Me.toggleFontUnderlineItem1, Me.toggleFontDoubleUnderlineItem1, Me.toggleFontStrikeoutItem1, Me.toggleFontDoubleStrikeoutItem1, Me.toggleFontSuperscriptItem1, Me.toggleFontSubscriptItem1, Me.barButtonGroup3, Me.changeTextCaseItem1, Me.makeTextUpperCaseItem1, Me.makeTextLowerCaseItem1, Me.toggleTextCaseItem1, Me.barButtonGroup4, Me.barButtonGroup5, Me.barButtonGroup6, Me.barButtonGroup7, Me.changeParagraphLineSpacingItem1, Me.setSingleParagraphSpacingItem1, Me.setSesquialteralParagraphSpacingItem1, Me.setDoubleParagraphSpacingItem1, Me.showLineSpacingFormItem1, Me.addSpacingBeforeParagraphItem1, Me.removeSpacingBeforeParagraphItem1, Me.addSpacingAfterParagraphItem1, Me.removeSpacingAfterParagraphItem1, Me.changeParagraphBackColorItem1, Me.findItem1, Me.replaceItem1, Me.galleryChangeStyleItem1, Me.barButtonGroup8, Me.barButtonGroup9, Me.barButtonGroup10, Me.barButtonGroup11, Me.barButtonGroup12, Me.barButtonGroup13, Me.barButtonGroup14})
+            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem, Me.fileNewItem1, Me.fileOpenItem1, Me.fileSaveItem1, Me.fileSaveAsItem1, Me.quickPrintItem1, Me.printItem1, Me.printPreviewItem1, Me.undoItem1, Me.redoItem1, Me.changeFontNameItem1, Me.changeFontSizeItem1, Me.changeFontColorItem1, Me.changeFontBackColorItem1, Me.toggleFontBoldItem1, Me.toggleFontItalicItem1, Me.fontSizeIncreaseItem1, Me.fontSizeDecreaseItem1, Me.clearFormattingItem1, Me.toggleParagraphAlignmentLeftItem1, Me.toggleParagraphAlignmentCenterItem1, Me.toggleParagraphAlignmentRightItem1, Me.toggleParagraphAlignmentJustifyItem1, Me.toggleNumberingListItem1, Me.toggleBulletedListItem1, Me.toggleMultiLevelListItem1, Me.decreaseIndentItem1, Me.increaseIndentItem1, Me.toggleShowWhitespaceItem1, Me.showParagraphFormItem1, Me.insertMergeFieldItem1, Me.showAllFieldCodesItem1, Me.showAllFieldResultsItem1, Me.toggleViewMergedDataItem1, Me.mergeToNewDocumentItem, Me.mergeToFileItem, Me.changeStyleItem1, Me.pasteItem1, Me.cutItem1, Me.copyItem1, Me.pasteSpecialItem1, Me.barButtonGroup1, Me.barButtonGroup2, Me.toggleFontUnderlineItem1, Me.toggleFontDoubleUnderlineItem1, Me.toggleFontStrikeoutItem1, Me.toggleFontDoubleStrikeoutItem1, Me.toggleFontSuperscriptItem1, Me.toggleFontSubscriptItem1, Me.barButtonGroup3, Me.changeTextCaseItem1, Me.makeTextUpperCaseItem1, Me.makeTextLowerCaseItem1, Me.toggleTextCaseItem1, Me.barButtonGroup4, Me.barButtonGroup5, Me.barButtonGroup6, Me.barButtonGroup7, Me.changeParagraphLineSpacingItem1, Me.setSingleParagraphSpacingItem1, Me.setSesquialteralParagraphSpacingItem1, Me.setDoubleParagraphSpacingItem1, Me.showLineSpacingFormItem1, Me.addSpacingBeforeParagraphItem1, Me.removeSpacingBeforeParagraphItem1, Me.addSpacingAfterParagraphItem1, Me.removeSpacingAfterParagraphItem1, Me.changeParagraphBackColorItem1, Me.findItem1, Me.replaceItem1, Me.galleryChangeStyleItem1, Me.barButtonGroup8, Me.barButtonGroup9, Me.barButtonGroup10, Me.barButtonGroup11, Me.barButtonGroup12, Me.barButtonGroup13, Me.barButtonGroup14})
             Me.ribbonControl1.Location = New System.Drawing.Point(0, 0)
             Me.ribbonControl1.MaxItemId = 47
             Me.ribbonControl1.Name = "ribbonControl1"
-            Me.ribbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() { Me.fileRibbonPage1, Me.homeRibbonPage1, Me.mailingsRibbonPage1})
-            Me.ribbonControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() { Me.repositoryItemFontEdit1, Me.repositoryItemRichEditFontSizeEdit1, Me.repositoryItemRichEditStyleEdit1})
+            Me.ribbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.fileRibbonPage1, Me.homeRibbonPage1, Me.mailingsRibbonPage1})
+            Me.ribbonControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.repositoryItemFontEdit1, Me.repositoryItemRichEditFontSizeEdit1, Me.repositoryItemRichEditStyleEdit1})
             Me.ribbonControl1.Size = New System.Drawing.Size(792, 142)
             Me.ribbonControl1.StatusBar = Me.ribbonStatusBar1
             ' 
             ' fileNewItem1
             ' 
-            Me.fileNewItem1.Glyph = (DirectCast(resources.GetObject("fileNewItem1.Glyph"), System.Drawing.Image))
+            Me.fileNewItem1.Glyph = CType((resources.GetObject("fileNewItem1.Glyph")), System.Drawing.Image)
             Me.fileNewItem1.Id = 0
-            Me.fileNewItem1.LargeGlyph = (DirectCast(resources.GetObject("fileNewItem1.LargeGlyph"), System.Drawing.Image))
+            Me.fileNewItem1.LargeGlyph = CType((resources.GetObject("fileNewItem1.LargeGlyph")), System.Drawing.Image)
             Me.fileNewItem1.Name = "fileNewItem1"
             ' 
             ' fileOpenItem1
             ' 
-            Me.fileOpenItem1.Glyph = (DirectCast(resources.GetObject("fileOpenItem1.Glyph"), System.Drawing.Image))
+            Me.fileOpenItem1.Glyph = CType((resources.GetObject("fileOpenItem1.Glyph")), System.Drawing.Image)
             Me.fileOpenItem1.Id = 1
-            Me.fileOpenItem1.LargeGlyph = (DirectCast(resources.GetObject("fileOpenItem1.LargeGlyph"), System.Drawing.Image))
+            Me.fileOpenItem1.LargeGlyph = CType((resources.GetObject("fileOpenItem1.LargeGlyph")), System.Drawing.Image)
             Me.fileOpenItem1.Name = "fileOpenItem1"
             ' 
             ' fileSaveItem1
             ' 
-            Me.fileSaveItem1.Glyph = (DirectCast(resources.GetObject("fileSaveItem1.Glyph"), System.Drawing.Image))
+            Me.fileSaveItem1.Glyph = CType((resources.GetObject("fileSaveItem1.Glyph")), System.Drawing.Image)
             Me.fileSaveItem1.Id = 2
-            Me.fileSaveItem1.LargeGlyph = (DirectCast(resources.GetObject("fileSaveItem1.LargeGlyph"), System.Drawing.Image))
+            Me.fileSaveItem1.LargeGlyph = CType((resources.GetObject("fileSaveItem1.LargeGlyph")), System.Drawing.Image)
             Me.fileSaveItem1.Name = "fileSaveItem1"
             ' 
             ' fileSaveAsItem1
             ' 
-            Me.fileSaveAsItem1.Glyph = (DirectCast(resources.GetObject("fileSaveAsItem1.Glyph"), System.Drawing.Image))
+            Me.fileSaveAsItem1.Glyph = CType((resources.GetObject("fileSaveAsItem1.Glyph")), System.Drawing.Image)
             Me.fileSaveAsItem1.Id = 3
-            Me.fileSaveAsItem1.LargeGlyph = (DirectCast(resources.GetObject("fileSaveAsItem1.LargeGlyph"), System.Drawing.Image))
+            Me.fileSaveAsItem1.LargeGlyph = CType((resources.GetObject("fileSaveAsItem1.LargeGlyph")), System.Drawing.Image)
             Me.fileSaveAsItem1.Name = "fileSaveAsItem1"
             ' 
             ' quickPrintItem1
             ' 
-            Me.quickPrintItem1.Glyph = (DirectCast(resources.GetObject("quickPrintItem1.Glyph"), System.Drawing.Image))
+            Me.quickPrintItem1.Glyph = CType((resources.GetObject("quickPrintItem1.Glyph")), System.Drawing.Image)
             Me.quickPrintItem1.Id = 4
-            Me.quickPrintItem1.LargeGlyph = (DirectCast(resources.GetObject("quickPrintItem1.LargeGlyph"), System.Drawing.Image))
+            Me.quickPrintItem1.LargeGlyph = CType((resources.GetObject("quickPrintItem1.LargeGlyph")), System.Drawing.Image)
             Me.quickPrintItem1.Name = "quickPrintItem1"
             ' 
             ' printItem1
             ' 
-            Me.printItem1.Glyph = (DirectCast(resources.GetObject("printItem1.Glyph"), System.Drawing.Image))
+            Me.printItem1.Glyph = CType((resources.GetObject("printItem1.Glyph")), System.Drawing.Image)
             Me.printItem1.Id = 5
-            Me.printItem1.LargeGlyph = (DirectCast(resources.GetObject("printItem1.LargeGlyph"), System.Drawing.Image))
+            Me.printItem1.LargeGlyph = CType((resources.GetObject("printItem1.LargeGlyph")), System.Drawing.Image)
             Me.printItem1.Name = "printItem1"
             ' 
             ' printPreviewItem1
             ' 
-            Me.printPreviewItem1.Glyph = (DirectCast(resources.GetObject("printPreviewItem1.Glyph"), System.Drawing.Image))
+            Me.printPreviewItem1.Glyph = CType((resources.GetObject("printPreviewItem1.Glyph")), System.Drawing.Image)
             Me.printPreviewItem1.Id = 6
-            Me.printPreviewItem1.LargeGlyph = (DirectCast(resources.GetObject("printPreviewItem1.LargeGlyph"), System.Drawing.Image))
+            Me.printPreviewItem1.LargeGlyph = CType((resources.GetObject("printPreviewItem1.LargeGlyph")), System.Drawing.Image)
             Me.printPreviewItem1.Name = "printPreviewItem1"
             ' 
             ' undoItem1
             ' 
-            Me.undoItem1.Glyph = (DirectCast(resources.GetObject("undoItem1.Glyph"), System.Drawing.Image))
+            Me.undoItem1.Glyph = CType((resources.GetObject("undoItem1.Glyph")), System.Drawing.Image)
             Me.undoItem1.Id = 7
-            Me.undoItem1.LargeGlyph = (DirectCast(resources.GetObject("undoItem1.LargeGlyph"), System.Drawing.Image))
+            Me.undoItem1.LargeGlyph = CType((resources.GetObject("undoItem1.LargeGlyph")), System.Drawing.Image)
             Me.undoItem1.Name = "undoItem1"
             ' 
             ' redoItem1
             ' 
-            Me.redoItem1.Glyph = (DirectCast(resources.GetObject("redoItem1.Glyph"), System.Drawing.Image))
+            Me.redoItem1.Glyph = CType((resources.GetObject("redoItem1.Glyph")), System.Drawing.Image)
             Me.redoItem1.Id = 8
-            Me.redoItem1.LargeGlyph = (DirectCast(resources.GetObject("redoItem1.LargeGlyph"), System.Drawing.Image))
+            Me.redoItem1.LargeGlyph = CType((resources.GetObject("redoItem1.LargeGlyph")), System.Drawing.Image)
             Me.redoItem1.Name = "redoItem1"
             ' 
             ' changeFontNameItem1
@@ -254,7 +257,7 @@
             ' repositoryItemFontEdit1
             ' 
             Me.repositoryItemFontEdit1.AutoHeight = False
-            Me.repositoryItemFontEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+            Me.repositoryItemFontEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.repositoryItemFontEdit1.Name = "repositoryItemFontEdit1"
             ' 
             ' changeFontSizeItem1
@@ -266,162 +269,162 @@
             ' repositoryItemRichEditFontSizeEdit1
             ' 
             Me.repositoryItemRichEditFontSizeEdit1.AutoHeight = False
-            Me.repositoryItemRichEditFontSizeEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+            Me.repositoryItemRichEditFontSizeEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.repositoryItemRichEditFontSizeEdit1.Control = Me.richEditControl1
             Me.repositoryItemRichEditFontSizeEdit1.Name = "repositoryItemRichEditFontSizeEdit1"
             ' 
             ' changeFontColorItem1
             ' 
-            Me.changeFontColorItem1.Glyph = (DirectCast(resources.GetObject("changeFontColorItem1.Glyph"), System.Drawing.Image))
+            Me.changeFontColorItem1.Glyph = CType((resources.GetObject("changeFontColorItem1.Glyph")), System.Drawing.Image)
             Me.changeFontColorItem1.Id = 11
-            Me.changeFontColorItem1.LargeGlyph = (DirectCast(resources.GetObject("changeFontColorItem1.LargeGlyph"), System.Drawing.Image))
+            Me.changeFontColorItem1.LargeGlyph = CType((resources.GetObject("changeFontColorItem1.LargeGlyph")), System.Drawing.Image)
             Me.changeFontColorItem1.Name = "changeFontColorItem1"
             ' 
             ' changeFontBackColorItem1
             ' 
-            Me.changeFontBackColorItem1.Glyph = (DirectCast(resources.GetObject("changeFontBackColorItem1.Glyph"), System.Drawing.Image))
+            Me.changeFontBackColorItem1.Glyph = CType((resources.GetObject("changeFontBackColorItem1.Glyph")), System.Drawing.Image)
             Me.changeFontBackColorItem1.Id = 12
-            Me.changeFontBackColorItem1.LargeGlyph = (DirectCast(resources.GetObject("changeFontBackColorItem1.LargeGlyph"), System.Drawing.Image))
+            Me.changeFontBackColorItem1.LargeGlyph = CType((resources.GetObject("changeFontBackColorItem1.LargeGlyph")), System.Drawing.Image)
             Me.changeFontBackColorItem1.Name = "changeFontBackColorItem1"
             ' 
             ' toggleFontBoldItem1
             ' 
-            Me.toggleFontBoldItem1.Glyph = (DirectCast(resources.GetObject("toggleFontBoldItem1.Glyph"), System.Drawing.Image))
+            Me.toggleFontBoldItem1.Glyph = CType((resources.GetObject("toggleFontBoldItem1.Glyph")), System.Drawing.Image)
             Me.toggleFontBoldItem1.Id = 13
-            Me.toggleFontBoldItem1.LargeGlyph = (DirectCast(resources.GetObject("toggleFontBoldItem1.LargeGlyph"), System.Drawing.Image))
+            Me.toggleFontBoldItem1.LargeGlyph = CType((resources.GetObject("toggleFontBoldItem1.LargeGlyph")), System.Drawing.Image)
             Me.toggleFontBoldItem1.Name = "toggleFontBoldItem1"
             ' 
             ' toggleFontItalicItem1
             ' 
-            Me.toggleFontItalicItem1.Glyph = (DirectCast(resources.GetObject("toggleFontItalicItem1.Glyph"), System.Drawing.Image))
+            Me.toggleFontItalicItem1.Glyph = CType((resources.GetObject("toggleFontItalicItem1.Glyph")), System.Drawing.Image)
             Me.toggleFontItalicItem1.Id = 14
-            Me.toggleFontItalicItem1.LargeGlyph = (DirectCast(resources.GetObject("toggleFontItalicItem1.LargeGlyph"), System.Drawing.Image))
+            Me.toggleFontItalicItem1.LargeGlyph = CType((resources.GetObject("toggleFontItalicItem1.LargeGlyph")), System.Drawing.Image)
             Me.toggleFontItalicItem1.Name = "toggleFontItalicItem1"
             ' 
             ' fontSizeIncreaseItem1
             ' 
-            Me.fontSizeIncreaseItem1.Glyph = (DirectCast(resources.GetObject("fontSizeIncreaseItem1.Glyph"), System.Drawing.Image))
+            Me.fontSizeIncreaseItem1.Glyph = CType((resources.GetObject("fontSizeIncreaseItem1.Glyph")), System.Drawing.Image)
             Me.fontSizeIncreaseItem1.Id = 21
-            Me.fontSizeIncreaseItem1.LargeGlyph = (DirectCast(resources.GetObject("fontSizeIncreaseItem1.LargeGlyph"), System.Drawing.Image))
+            Me.fontSizeIncreaseItem1.LargeGlyph = CType((resources.GetObject("fontSizeIncreaseItem1.LargeGlyph")), System.Drawing.Image)
             Me.fontSizeIncreaseItem1.Name = "fontSizeIncreaseItem1"
             ' 
             ' fontSizeDecreaseItem1
             ' 
-            Me.fontSizeDecreaseItem1.Glyph = (DirectCast(resources.GetObject("fontSizeDecreaseItem1.Glyph"), System.Drawing.Image))
+            Me.fontSizeDecreaseItem1.Glyph = CType((resources.GetObject("fontSizeDecreaseItem1.Glyph")), System.Drawing.Image)
             Me.fontSizeDecreaseItem1.Id = 22
-            Me.fontSizeDecreaseItem1.LargeGlyph = (DirectCast(resources.GetObject("fontSizeDecreaseItem1.LargeGlyph"), System.Drawing.Image))
+            Me.fontSizeDecreaseItem1.LargeGlyph = CType((resources.GetObject("fontSizeDecreaseItem1.LargeGlyph")), System.Drawing.Image)
             Me.fontSizeDecreaseItem1.Name = "fontSizeDecreaseItem1"
             ' 
             ' clearFormattingItem1
             ' 
-            Me.clearFormattingItem1.Glyph = (DirectCast(resources.GetObject("clearFormattingItem1.Glyph"), System.Drawing.Image))
+            Me.clearFormattingItem1.Glyph = CType((resources.GetObject("clearFormattingItem1.Glyph")), System.Drawing.Image)
             Me.clearFormattingItem1.Id = 23
-            Me.clearFormattingItem1.LargeGlyph = (DirectCast(resources.GetObject("clearFormattingItem1.LargeGlyph"), System.Drawing.Image))
+            Me.clearFormattingItem1.LargeGlyph = CType((resources.GetObject("clearFormattingItem1.LargeGlyph")), System.Drawing.Image)
             Me.clearFormattingItem1.Name = "clearFormattingItem1"
             ' 
             ' toggleParagraphAlignmentLeftItem1
             ' 
-            Me.toggleParagraphAlignmentLeftItem1.Glyph = (DirectCast(resources.GetObject("toggleParagraphAlignmentLeftItem1.Glyph"), System.Drawing.Image))
+            Me.toggleParagraphAlignmentLeftItem1.Glyph = CType((resources.GetObject("toggleParagraphAlignmentLeftItem1.Glyph")), System.Drawing.Image)
             Me.toggleParagraphAlignmentLeftItem1.Id = 25
-            Me.toggleParagraphAlignmentLeftItem1.LargeGlyph = (DirectCast(resources.GetObject("toggleParagraphAlignmentLeftItem1.LargeGlyph"), System.Drawing.Image))
+            Me.toggleParagraphAlignmentLeftItem1.LargeGlyph = CType((resources.GetObject("toggleParagraphAlignmentLeftItem1.LargeGlyph")), System.Drawing.Image)
             Me.toggleParagraphAlignmentLeftItem1.Name = "toggleParagraphAlignmentLeftItem1"
             ' 
             ' toggleParagraphAlignmentCenterItem1
             ' 
-            Me.toggleParagraphAlignmentCenterItem1.Glyph = (DirectCast(resources.GetObject("toggleParagraphAlignmentCenterItem1.Glyph"), System.Drawing.Image))
+            Me.toggleParagraphAlignmentCenterItem1.Glyph = CType((resources.GetObject("toggleParagraphAlignmentCenterItem1.Glyph")), System.Drawing.Image)
             Me.toggleParagraphAlignmentCenterItem1.Id = 26
-            Me.toggleParagraphAlignmentCenterItem1.LargeGlyph = (DirectCast(resources.GetObject("toggleParagraphAlignmentCenterItem1.LargeGlyph"), System.Drawing.Image))
+            Me.toggleParagraphAlignmentCenterItem1.LargeGlyph = CType((resources.GetObject("toggleParagraphAlignmentCenterItem1.LargeGlyph")), System.Drawing.Image)
             Me.toggleParagraphAlignmentCenterItem1.Name = "toggleParagraphAlignmentCenterItem1"
             ' 
             ' toggleParagraphAlignmentRightItem1
             ' 
-            Me.toggleParagraphAlignmentRightItem1.Glyph = (DirectCast(resources.GetObject("toggleParagraphAlignmentRightItem1.Glyph"), System.Drawing.Image))
+            Me.toggleParagraphAlignmentRightItem1.Glyph = CType((resources.GetObject("toggleParagraphAlignmentRightItem1.Glyph")), System.Drawing.Image)
             Me.toggleParagraphAlignmentRightItem1.Id = 27
-            Me.toggleParagraphAlignmentRightItem1.LargeGlyph = (DirectCast(resources.GetObject("toggleParagraphAlignmentRightItem1.LargeGlyph"), System.Drawing.Image))
+            Me.toggleParagraphAlignmentRightItem1.LargeGlyph = CType((resources.GetObject("toggleParagraphAlignmentRightItem1.LargeGlyph")), System.Drawing.Image)
             Me.toggleParagraphAlignmentRightItem1.Name = "toggleParagraphAlignmentRightItem1"
             ' 
             ' toggleParagraphAlignmentJustifyItem1
             ' 
-            Me.toggleParagraphAlignmentJustifyItem1.Glyph = (DirectCast(resources.GetObject("toggleParagraphAlignmentJustifyItem1.Glyph"), System.Drawing.Image))
+            Me.toggleParagraphAlignmentJustifyItem1.Glyph = CType((resources.GetObject("toggleParagraphAlignmentJustifyItem1.Glyph")), System.Drawing.Image)
             Me.toggleParagraphAlignmentJustifyItem1.Id = 28
-            Me.toggleParagraphAlignmentJustifyItem1.LargeGlyph = (DirectCast(resources.GetObject("toggleParagraphAlignmentJustifyItem1.LargeGlyph"), System.Drawing.Image))
+            Me.toggleParagraphAlignmentJustifyItem1.LargeGlyph = CType((resources.GetObject("toggleParagraphAlignmentJustifyItem1.LargeGlyph")), System.Drawing.Image)
             Me.toggleParagraphAlignmentJustifyItem1.Name = "toggleParagraphAlignmentJustifyItem1"
             ' 
             ' toggleNumberingListItem1
             ' 
-            Me.toggleNumberingListItem1.Glyph = (DirectCast(resources.GetObject("toggleNumberingListItem1.Glyph"), System.Drawing.Image))
+            Me.toggleNumberingListItem1.Glyph = CType((resources.GetObject("toggleNumberingListItem1.Glyph")), System.Drawing.Image)
             Me.toggleNumberingListItem1.Id = 29
-            Me.toggleNumberingListItem1.LargeGlyph = (DirectCast(resources.GetObject("toggleNumberingListItem1.LargeGlyph"), System.Drawing.Image))
+            Me.toggleNumberingListItem1.LargeGlyph = CType((resources.GetObject("toggleNumberingListItem1.LargeGlyph")), System.Drawing.Image)
             Me.toggleNumberingListItem1.Name = "toggleNumberingListItem1"
             ' 
             ' toggleBulletedListItem1
             ' 
-            Me.toggleBulletedListItem1.Glyph = (DirectCast(resources.GetObject("toggleBulletedListItem1.Glyph"), System.Drawing.Image))
+            Me.toggleBulletedListItem1.Glyph = CType((resources.GetObject("toggleBulletedListItem1.Glyph")), System.Drawing.Image)
             Me.toggleBulletedListItem1.Id = 30
-            Me.toggleBulletedListItem1.LargeGlyph = (DirectCast(resources.GetObject("toggleBulletedListItem1.LargeGlyph"), System.Drawing.Image))
+            Me.toggleBulletedListItem1.LargeGlyph = CType((resources.GetObject("toggleBulletedListItem1.LargeGlyph")), System.Drawing.Image)
             Me.toggleBulletedListItem1.Name = "toggleBulletedListItem1"
             ' 
             ' toggleMultiLevelListItem1
             ' 
-            Me.toggleMultiLevelListItem1.Glyph = (DirectCast(resources.GetObject("toggleMultiLevelListItem1.Glyph"), System.Drawing.Image))
+            Me.toggleMultiLevelListItem1.Glyph = CType((resources.GetObject("toggleMultiLevelListItem1.Glyph")), System.Drawing.Image)
             Me.toggleMultiLevelListItem1.Id = 31
-            Me.toggleMultiLevelListItem1.LargeGlyph = (DirectCast(resources.GetObject("toggleMultiLevelListItem1.LargeGlyph"), System.Drawing.Image))
+            Me.toggleMultiLevelListItem1.LargeGlyph = CType((resources.GetObject("toggleMultiLevelListItem1.LargeGlyph")), System.Drawing.Image)
             Me.toggleMultiLevelListItem1.Name = "toggleMultiLevelListItem1"
             ' 
             ' decreaseIndentItem1
             ' 
-            Me.decreaseIndentItem1.Glyph = (DirectCast(resources.GetObject("decreaseIndentItem1.Glyph"), System.Drawing.Image))
+            Me.decreaseIndentItem1.Glyph = CType((resources.GetObject("decreaseIndentItem1.Glyph")), System.Drawing.Image)
             Me.decreaseIndentItem1.Id = 32
-            Me.decreaseIndentItem1.LargeGlyph = (DirectCast(resources.GetObject("decreaseIndentItem1.LargeGlyph"), System.Drawing.Image))
+            Me.decreaseIndentItem1.LargeGlyph = CType((resources.GetObject("decreaseIndentItem1.LargeGlyph")), System.Drawing.Image)
             Me.decreaseIndentItem1.Name = "decreaseIndentItem1"
             ' 
             ' increaseIndentItem1
             ' 
-            Me.increaseIndentItem1.Glyph = (DirectCast(resources.GetObject("increaseIndentItem1.Glyph"), System.Drawing.Image))
+            Me.increaseIndentItem1.Glyph = CType((resources.GetObject("increaseIndentItem1.Glyph")), System.Drawing.Image)
             Me.increaseIndentItem1.Id = 33
-            Me.increaseIndentItem1.LargeGlyph = (DirectCast(resources.GetObject("increaseIndentItem1.LargeGlyph"), System.Drawing.Image))
+            Me.increaseIndentItem1.LargeGlyph = CType((resources.GetObject("increaseIndentItem1.LargeGlyph")), System.Drawing.Image)
             Me.increaseIndentItem1.Name = "increaseIndentItem1"
             ' 
             ' toggleShowWhitespaceItem1
             ' 
-            Me.toggleShowWhitespaceItem1.Glyph = (DirectCast(resources.GetObject("toggleShowWhitespaceItem1.Glyph"), System.Drawing.Image))
+            Me.toggleShowWhitespaceItem1.Glyph = CType((resources.GetObject("toggleShowWhitespaceItem1.Glyph")), System.Drawing.Image)
             Me.toggleShowWhitespaceItem1.Id = 34
-            Me.toggleShowWhitespaceItem1.LargeGlyph = (DirectCast(resources.GetObject("toggleShowWhitespaceItem1.LargeGlyph"), System.Drawing.Image))
+            Me.toggleShowWhitespaceItem1.LargeGlyph = CType((resources.GetObject("toggleShowWhitespaceItem1.LargeGlyph")), System.Drawing.Image)
             Me.toggleShowWhitespaceItem1.Name = "toggleShowWhitespaceItem1"
             ' 
             ' showParagraphFormItem1
             ' 
-            Me.showParagraphFormItem1.Glyph = (DirectCast(resources.GetObject("showParagraphFormItem1.Glyph"), System.Drawing.Image))
+            Me.showParagraphFormItem1.Glyph = CType((resources.GetObject("showParagraphFormItem1.Glyph")), System.Drawing.Image)
             Me.showParagraphFormItem1.Id = 35
-            Me.showParagraphFormItem1.LargeGlyph = (DirectCast(resources.GetObject("showParagraphFormItem1.LargeGlyph"), System.Drawing.Image))
+            Me.showParagraphFormItem1.LargeGlyph = CType((resources.GetObject("showParagraphFormItem1.LargeGlyph")), System.Drawing.Image)
             Me.showParagraphFormItem1.Name = "showParagraphFormItem1"
             ' 
             ' insertMergeFieldItem1
             ' 
-            Me.insertMergeFieldItem1.Glyph = (DirectCast(resources.GetObject("insertMergeFieldItem1.Glyph"), System.Drawing.Image))
+            Me.insertMergeFieldItem1.Glyph = CType((resources.GetObject("insertMergeFieldItem1.Glyph")), System.Drawing.Image)
             Me.insertMergeFieldItem1.Id = 36
-            Me.insertMergeFieldItem1.LargeGlyph = (DirectCast(resources.GetObject("insertMergeFieldItem1.LargeGlyph"), System.Drawing.Image))
+            Me.insertMergeFieldItem1.LargeGlyph = CType((resources.GetObject("insertMergeFieldItem1.LargeGlyph")), System.Drawing.Image)
             Me.insertMergeFieldItem1.Name = "insertMergeFieldItem1"
             ' 
             ' showAllFieldCodesItem1
             ' 
-            Me.showAllFieldCodesItem1.Glyph = (DirectCast(resources.GetObject("showAllFieldCodesItem1.Glyph"), System.Drawing.Image))
+            Me.showAllFieldCodesItem1.Glyph = CType((resources.GetObject("showAllFieldCodesItem1.Glyph")), System.Drawing.Image)
             Me.showAllFieldCodesItem1.Id = 37
-            Me.showAllFieldCodesItem1.LargeGlyph = (DirectCast(resources.GetObject("showAllFieldCodesItem1.LargeGlyph"), System.Drawing.Image))
+            Me.showAllFieldCodesItem1.LargeGlyph = CType((resources.GetObject("showAllFieldCodesItem1.LargeGlyph")), System.Drawing.Image)
             Me.showAllFieldCodesItem1.Name = "showAllFieldCodesItem1"
             ' 
             ' showAllFieldResultsItem1
             ' 
-            Me.showAllFieldResultsItem1.Glyph = (DirectCast(resources.GetObject("showAllFieldResultsItem1.Glyph"), System.Drawing.Image))
+            Me.showAllFieldResultsItem1.Glyph = CType((resources.GetObject("showAllFieldResultsItem1.Glyph")), System.Drawing.Image)
             Me.showAllFieldResultsItem1.Id = 38
-            Me.showAllFieldResultsItem1.LargeGlyph = (DirectCast(resources.GetObject("showAllFieldResultsItem1.LargeGlyph"), System.Drawing.Image))
+            Me.showAllFieldResultsItem1.LargeGlyph = CType((resources.GetObject("showAllFieldResultsItem1.LargeGlyph")), System.Drawing.Image)
             Me.showAllFieldResultsItem1.Name = "showAllFieldResultsItem1"
             ' 
             ' toggleViewMergedDataItem1
             ' 
-            Me.toggleViewMergedDataItem1.Glyph = (DirectCast(resources.GetObject("toggleViewMergedDataItem1.Glyph"), System.Drawing.Image))
+            Me.toggleViewMergedDataItem1.Glyph = CType((resources.GetObject("toggleViewMergedDataItem1.Glyph")), System.Drawing.Image)
             Me.toggleViewMergedDataItem1.Id = 39
-            Me.toggleViewMergedDataItem1.LargeGlyph = (DirectCast(resources.GetObject("toggleViewMergedDataItem1.LargeGlyph"), System.Drawing.Image))
+            Me.toggleViewMergedDataItem1.LargeGlyph = CType((resources.GetObject("toggleViewMergedDataItem1.LargeGlyph")), System.Drawing.Image)
             Me.toggleViewMergedDataItem1.Name = "toggleViewMergedDataItem1"
             ' 
             ' mergeToNewDocumentItem
@@ -429,12 +432,14 @@
             Me.mergeToNewDocumentItem.Caption = "Merge to New Document"
             Me.mergeToNewDocumentItem.Id = 40
             Me.mergeToNewDocumentItem.Name = "mergeToNewDocumentItem"
+            AddHandler Me.mergeToNewDocumentItem.ItemClick, New DevExpress.XtraBars.ItemClickEventHandler(AddressOf Me.mergeToNewDocumentItem_ItemClick)
             ' 
             ' mergeToFileItem
             ' 
             Me.mergeToFileItem.Caption = "Merge to File"
             Me.mergeToFileItem.Id = 41
             Me.mergeToFileItem.Name = "mergeToFileItem"
+            AddHandler Me.mergeToFileItem.ItemClick, New DevExpress.XtraBars.ItemClickEventHandler(AddressOf Me.mergeToFileItem_ItemClick)
             ' 
             ' changeStyleItem1
             ' 
@@ -445,7 +450,7 @@
             ' repositoryItemRichEditStyleEdit1
             ' 
             Me.repositoryItemRichEditStyleEdit1.AutoHeight = False
-            Me.repositoryItemRichEditStyleEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+            Me.repositoryItemRichEditStyleEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.repositoryItemRichEditStyleEdit1.Control = Me.richEditControl1
             Me.repositoryItemRichEditStyleEdit1.Name = "repositoryItemRichEditStyleEdit1"
             ' 
@@ -534,11 +539,7 @@
             ' changeTextCaseItem1
             ' 
             Me.changeTextCaseItem1.Id = 23
-            Me.changeTextCaseItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { _
-                New DevExpress.XtraBars.LinkPersistInfo(Me.makeTextUpperCaseItem1), _
-                New DevExpress.XtraBars.LinkPersistInfo(Me.makeTextLowerCaseItem1), _
-                New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTextCaseItem1) _
-            })
+            Me.changeTextCaseItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.makeTextUpperCaseItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.makeTextLowerCaseItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTextCaseItem1)})
             Me.changeTextCaseItem1.Name = "changeTextCaseItem1"
             ' 
             ' makeTextUpperCaseItem1
@@ -595,16 +596,7 @@
             ' changeParagraphLineSpacingItem1
             ' 
             Me.changeParagraphLineSpacingItem1.Id = 27
-            Me.changeParagraphLineSpacingItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { _
-                New DevExpress.XtraBars.LinkPersistInfo(Me.setSingleParagraphSpacingItem1), _
-                New DevExpress.XtraBars.LinkPersistInfo(Me.setSesquialteralParagraphSpacingItem1), _
-                New DevExpress.XtraBars.LinkPersistInfo(Me.setDoubleParagraphSpacingItem1), _
-                New DevExpress.XtraBars.LinkPersistInfo(Me.showLineSpacingFormItem1), _
-                New DevExpress.XtraBars.LinkPersistInfo(Me.addSpacingBeforeParagraphItem1), _
-                New DevExpress.XtraBars.LinkPersistInfo(Me.removeSpacingBeforeParagraphItem1), _
-                New DevExpress.XtraBars.LinkPersistInfo(Me.addSpacingAfterParagraphItem1), _
-                New DevExpress.XtraBars.LinkPersistInfo(Me.removeSpacingAfterParagraphItem1) _
-            })
+            Me.changeParagraphLineSpacingItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.setSingleParagraphSpacingItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.setSesquialteralParagraphSpacingItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.setDoubleParagraphSpacingItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.showLineSpacingFormItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.addSpacingBeforeParagraphItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.removeSpacingBeforeParagraphItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.addSpacingAfterParagraphItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.removeSpacingAfterParagraphItem1)})
             Me.changeParagraphLineSpacingItem1.Name = "changeParagraphLineSpacingItem1"
             ' 
             ' setSingleParagraphSpacingItem1
@@ -664,7 +656,7 @@
             ' 
             ' mailingsRibbonPage1
             ' 
-            Me.mailingsRibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.mailMergeRibbonPageGroup1})
+            Me.mailingsRibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.mailMergeRibbonPageGroup1})
             Me.mailingsRibbonPage1.Name = "mailingsRibbonPage1"
             ' 
             ' mailMergeRibbonPageGroup1
@@ -814,7 +806,7 @@
             ' 
             ' 
             Me.galleryChangeStyleItem1.Gallery.ColumnCount = 10
-            Me.galleryChangeStyleItem1.Gallery.Groups.AddRange(New DevExpress.XtraBars.Ribbon.GalleryItemGroup() { galleryItemGroup1})
+            Me.galleryChangeStyleItem1.Gallery.Groups.AddRange(New DevExpress.XtraBars.Ribbon.GalleryItemGroup() {galleryItemGroup1})
             Me.galleryChangeStyleItem1.Gallery.ImageSize = New System.Drawing.Size(65, 46)
             Me.galleryChangeStyleItem1.Id = 39
             Me.galleryChangeStyleItem1.Name = "galleryChangeStyleItem1"
@@ -834,7 +826,7 @@
             ' 
             ' fileRibbonPage1
             ' 
-            Me.fileRibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.commonRibbonPageGroup1})
+            Me.fileRibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.commonRibbonPageGroup1})
             Me.fileRibbonPage1.Name = "fileRibbonPage1"
             ' 
             ' clipboardRibbonPageGroup1
@@ -847,7 +839,7 @@
             ' 
             ' homeRibbonPage1
             ' 
-            Me.homeRibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.clipboardRibbonPageGroup1, Me.fontRibbonPageGroup1, Me.paragraphRibbonPageGroup1, Me.stylesRibbonPageGroup1, Me.editingRibbonPageGroup1})
+            Me.homeRibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.clipboardRibbonPageGroup1, Me.fontRibbonPageGroup1, Me.paragraphRibbonPageGroup1, Me.stylesRibbonPageGroup1, Me.editingRibbonPageGroup1})
             Me.homeRibbonPage1.Name = "homeRibbonPage1"
             reduceOperation1.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.UntilAvailable
             reduceOperation1.Group = Me.stylesRibbonPageGroup1
@@ -943,7 +935,7 @@
             ' 
             ' stylesRibbonPageGroup1
             ' 
-            Me.stylesRibbonPageGroup1.Glyph = (DirectCast(resources.GetObject("stylesRibbonPageGroup1.Glyph"), System.Drawing.Image))
+            Me.stylesRibbonPageGroup1.Glyph = CType((resources.GetObject("stylesRibbonPageGroup1.Glyph")), System.Drawing.Image)
             Me.stylesRibbonPageGroup1.ItemLinks.Add(Me.galleryChangeStyleItem1)
             Me.stylesRibbonPageGroup1.Name = "stylesRibbonPageGroup1"
             ' 
@@ -963,123 +955,221 @@
             Me.Controls.Add(Me.ribbonStatusBar1)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            DirectCast(Me.xtraTabControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.xtraTabControl1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.xtraTabControl1.ResumeLayout(False)
             Me.xtraTabPage1.ResumeLayout(False)
-            DirectCast(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.repositoryItemFontEdit1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.repositoryItemRichEditFontSizeEdit1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.repositoryItemRichEditStyleEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.ribbonControl1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.repositoryItemFontEdit1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.repositoryItemRichEditFontSizeEdit1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.repositoryItemRichEditStyleEdit1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.xtraTabPage2.ResumeLayout(False)
-            DirectCast(Me.richEditBarController1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.richEditBarController1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
-
         End Sub
 
-        #End Region
+'#End Region
+        Private xtraTabControl1 As DevExpress.XtraTab.XtraTabControl
 
-        Private WithEvents xtraTabControl1 As DevExpress.XtraTab.XtraTabControl
         Private xtraTabPage1 As DevExpress.XtraTab.XtraTabPage
+
         Private xtraTabPage2 As DevExpress.XtraTab.XtraTabPage
+
         Private richEditControl1 As DevExpress.XtraRichEdit.RichEditControl
+
         Private fileNewItem1 As DevExpress.XtraRichEdit.UI.FileNewItem
+
         Private fileOpenItem1 As DevExpress.XtraRichEdit.UI.FileOpenItem
+
         Private fileSaveItem1 As DevExpress.XtraRichEdit.UI.FileSaveItem
+
         Private fileSaveAsItem1 As DevExpress.XtraRichEdit.UI.FileSaveAsItem
+
         Private quickPrintItem1 As DevExpress.XtraRichEdit.UI.QuickPrintItem
+
         Private printItem1 As DevExpress.XtraRichEdit.UI.PrintItem
+
         Private printPreviewItem1 As DevExpress.XtraRichEdit.UI.PrintPreviewItem
+
         Private undoItem1 As DevExpress.XtraRichEdit.UI.UndoItem
+
         Private redoItem1 As DevExpress.XtraRichEdit.UI.RedoItem
+
         Private changeFontNameItem1 As DevExpress.XtraRichEdit.UI.ChangeFontNameItem
+
         Private changeFontSizeItem1 As DevExpress.XtraRichEdit.UI.ChangeFontSizeItem
+
         Private changeFontColorItem1 As DevExpress.XtraRichEdit.UI.ChangeFontColorItem
+
         Private changeFontBackColorItem1 As DevExpress.XtraRichEdit.UI.ChangeFontBackColorItem
+
         Private toggleFontBoldItem1 As DevExpress.XtraRichEdit.UI.ToggleFontBoldItem
+
         Private toggleFontItalicItem1 As DevExpress.XtraRichEdit.UI.ToggleFontItalicItem
+
         Private fontSizeIncreaseItem1 As DevExpress.XtraRichEdit.UI.FontSizeIncreaseItem
+
         Private fontSizeDecreaseItem1 As DevExpress.XtraRichEdit.UI.FontSizeDecreaseItem
+
         Private clearFormattingItem1 As DevExpress.XtraRichEdit.UI.ClearFormattingItem
+
         Private toggleParagraphAlignmentLeftItem1 As DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentLeftItem
+
         Private toggleParagraphAlignmentCenterItem1 As DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentCenterItem
+
         Private toggleParagraphAlignmentRightItem1 As DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentRightItem
+
         Private toggleParagraphAlignmentJustifyItem1 As DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentJustifyItem
+
         Private toggleNumberingListItem1 As DevExpress.XtraRichEdit.UI.ToggleNumberingListItem
+
         Private toggleBulletedListItem1 As DevExpress.XtraRichEdit.UI.ToggleBulletedListItem
+
         Private toggleMultiLevelListItem1 As DevExpress.XtraRichEdit.UI.ToggleMultiLevelListItem
+
         Private decreaseIndentItem1 As DevExpress.XtraRichEdit.UI.DecreaseIndentItem
+
         Private increaseIndentItem1 As DevExpress.XtraRichEdit.UI.IncreaseIndentItem
+
         Private toggleShowWhitespaceItem1 As DevExpress.XtraRichEdit.UI.ToggleShowWhitespaceItem
+
         Private showParagraphFormItem1 As DevExpress.XtraRichEdit.UI.ShowParagraphFormItem
+
         Private insertMergeFieldItem1 As DevExpress.XtraRichEdit.UI.InsertMergeFieldItem
+
         Private showAllFieldCodesItem1 As DevExpress.XtraRichEdit.UI.ShowAllFieldCodesItem
+
         Private showAllFieldResultsItem1 As DevExpress.XtraRichEdit.UI.ShowAllFieldResultsItem
+
         Private toggleViewMergedDataItem1 As DevExpress.XtraRichEdit.UI.ToggleViewMergedDataItem
+
         Private richEditControl2 As DevExpress.XtraRichEdit.RichEditControl
+
         Private richEditBarController1 As DevExpress.XtraRichEdit.UI.RichEditBarController
-        Private WithEvents mergeToNewDocumentItem As DevExpress.XtraBars.BarButtonItem
-        Private WithEvents mergeToFileItem As DevExpress.XtraBars.BarButtonItem
+
+        Private mergeToNewDocumentItem As DevExpress.XtraBars.BarButtonItem
+
+        Private mergeToFileItem As DevExpress.XtraBars.BarButtonItem
+
         Private repositoryItemFontEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemFontEdit
+
         Private repositoryItemRichEditFontSizeEdit1 As DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit
+
         Private ribbonControl1 As DevExpress.XtraBars.Ribbon.RibbonControl
+
         Private ribbonStatusBar1 As DevExpress.XtraBars.Ribbon.RibbonStatusBar
+
         Private ribbonPageGroup2 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+
         Private ribbonPageGroup1 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+
         Private mailingsRibbonPage1 As DevExpress.XtraRichEdit.UI.MailingsRibbonPage
+
         Private mailMergeRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.MailMergeRibbonPageGroup
+
         Private changeStyleItem1 As DevExpress.XtraRichEdit.UI.ChangeStyleItem
+
         Private repositoryItemRichEditStyleEdit1 As DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit
+
         Private pasteItem1 As DevExpress.XtraRichEdit.UI.PasteItem
+
         Private cutItem1 As DevExpress.XtraRichEdit.UI.CutItem
+
         Private copyItem1 As DevExpress.XtraRichEdit.UI.CopyItem
+
         Private pasteSpecialItem1 As DevExpress.XtraRichEdit.UI.PasteSpecialItem
+
         Private barButtonGroup1 As DevExpress.XtraBars.BarButtonGroup
+
         Private barButtonGroup2 As DevExpress.XtraBars.BarButtonGroup
+
         Private toggleFontUnderlineItem1 As DevExpress.XtraRichEdit.UI.ToggleFontUnderlineItem
+
         Private toggleFontDoubleUnderlineItem1 As DevExpress.XtraRichEdit.UI.ToggleFontDoubleUnderlineItem
+
         Private toggleFontStrikeoutItem1 As DevExpress.XtraRichEdit.UI.ToggleFontStrikeoutItem
+
         Private toggleFontDoubleStrikeoutItem1 As DevExpress.XtraRichEdit.UI.ToggleFontDoubleStrikeoutItem
+
         Private toggleFontSuperscriptItem1 As DevExpress.XtraRichEdit.UI.ToggleFontSuperscriptItem
+
         Private toggleFontSubscriptItem1 As DevExpress.XtraRichEdit.UI.ToggleFontSubscriptItem
+
         Private barButtonGroup3 As DevExpress.XtraBars.BarButtonGroup
+
         Private changeTextCaseItem1 As DevExpress.XtraRichEdit.UI.ChangeTextCaseItem
+
         Private makeTextUpperCaseItem1 As DevExpress.XtraRichEdit.UI.MakeTextUpperCaseItem
+
         Private makeTextLowerCaseItem1 As DevExpress.XtraRichEdit.UI.MakeTextLowerCaseItem
+
         Private toggleTextCaseItem1 As DevExpress.XtraRichEdit.UI.ToggleTextCaseItem
+
         Private barButtonGroup4 As DevExpress.XtraBars.BarButtonGroup
+
         Private barButtonGroup5 As DevExpress.XtraBars.BarButtonGroup
+
         Private barButtonGroup6 As DevExpress.XtraBars.BarButtonGroup
+
         Private barButtonGroup7 As DevExpress.XtraBars.BarButtonGroup
+
         Private changeParagraphLineSpacingItem1 As DevExpress.XtraRichEdit.UI.ChangeParagraphLineSpacingItem
+
         Private setSingleParagraphSpacingItem1 As DevExpress.XtraRichEdit.UI.SetSingleParagraphSpacingItem
+
         Private setSesquialteralParagraphSpacingItem1 As DevExpress.XtraRichEdit.UI.SetSesquialteralParagraphSpacingItem
+
         Private setDoubleParagraphSpacingItem1 As DevExpress.XtraRichEdit.UI.SetDoubleParagraphSpacingItem
+
         Private showLineSpacingFormItem1 As DevExpress.XtraRichEdit.UI.ShowLineSpacingFormItem
+
         Private addSpacingBeforeParagraphItem1 As DevExpress.XtraRichEdit.UI.AddSpacingBeforeParagraphItem
+
         Private removeSpacingBeforeParagraphItem1 As DevExpress.XtraRichEdit.UI.RemoveSpacingBeforeParagraphItem
+
         Private addSpacingAfterParagraphItem1 As DevExpress.XtraRichEdit.UI.AddSpacingAfterParagraphItem
+
         Private removeSpacingAfterParagraphItem1 As DevExpress.XtraRichEdit.UI.RemoveSpacingAfterParagraphItem
+
         Private changeParagraphBackColorItem1 As DevExpress.XtraRichEdit.UI.ChangeParagraphBackColorItem
+
         Private findItem1 As DevExpress.XtraRichEdit.UI.FindItem
+
         Private replaceItem1 As DevExpress.XtraRichEdit.UI.ReplaceItem
+
         Private showFontFormItem1 As DevExpress.XtraRichEdit.UI.ShowFontFormItem
+
         Private showEditStyleFormItem1 As DevExpress.XtraRichEdit.UI.ShowEditStyleFormItem
+
         Private galleryChangeStyleItem1 As DevExpress.XtraRichEdit.UI.GalleryChangeStyleItem
+
         Private barButtonGroup8 As DevExpress.XtraBars.BarButtonGroup
+
         Private barButtonGroup9 As DevExpress.XtraBars.BarButtonGroup
+
         Private barButtonGroup10 As DevExpress.XtraBars.BarButtonGroup
+
         Private barButtonGroup11 As DevExpress.XtraBars.BarButtonGroup
+
         Private barButtonGroup12 As DevExpress.XtraBars.BarButtonGroup
+
         Private barButtonGroup13 As DevExpress.XtraBars.BarButtonGroup
+
         Private barButtonGroup14 As DevExpress.XtraBars.BarButtonGroup
+
         Private fileRibbonPage1 As DevExpress.XtraRichEdit.UI.FileRibbonPage
+
         Private commonRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.CommonRibbonPageGroup
+
         Private homeRibbonPage1 As DevExpress.XtraRichEdit.UI.HomeRibbonPage
+
         Private clipboardRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.ClipboardRibbonPageGroup
+
         Private fontRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.FontRibbonPageGroup
+
         Private paragraphRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.ParagraphRibbonPageGroup
+
         Private stylesRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.StylesRibbonPageGroup
+
         Private editingRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup
     End Class
 End Namespace
-
