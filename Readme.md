@@ -26,7 +26,7 @@ In this example, the **ArrayList** generated at runtime is used as a data source
 * [Mail Merge in Rich Text Documents](https://docs.devexpress.com/WindowsForms/9330/controls-and-libraries/rich-text-editor/mail-merge)
 * [How to: Send the Mail-Merge Document as an E-Mail](https://docs.devexpress.com/WindowsForms/120456/controls-and-libraries/rich-text-editor/examples/import-and-export/how-to-send-the-mail-merge-document-as-an-e-mail)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-richedit-control-mail-merge&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-richedit-control-mail-merge&~~~was_helpful=no)
 
